@@ -13,10 +13,15 @@ const About = () => {
             <body className='bg-[#ECECEC]'>
                 <ScrollToTop />
                 <Navbar />
-                <AboutBanner />
+                {/*<AboutBanner />*/}
                 <AboutIntro />
                 <AboutMission />
-                <TeamMember />
+                <section id="trusted-clients">
+                    <TeamMember />
+
+                </section>
+
+
                 <Footer />
             </body>
         </>

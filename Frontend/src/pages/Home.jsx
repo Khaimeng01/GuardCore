@@ -8,6 +8,7 @@ import CustomerReview from "../Components/CustomerReview"
 import TrustedClients from "../Components/TrustedClients"
 import Footer from "../Components/Footer"
 import ScrollToTop from '../Components/ScrollToTop'
+import ContactUS from '../Components/ContactUs'
 
 const Home = () => {
     return (
@@ -18,9 +19,10 @@ const Home = () => {
                 <HomeBanner />
                 <HomeAbout />
                 <HomeServices />
-                <HomeCertificate />
-                <CustomerReview />
+               {/* <HomeCertificate />*/}
+               {/* <CustomerReview />*/}
                 <TrustedClients />
+                <ContactUS />
                 <Footer />
             </body>
         </>

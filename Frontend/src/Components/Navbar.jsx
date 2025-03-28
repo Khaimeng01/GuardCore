@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo-removebg-preview.png';
+import { HashLink } from 'react-router-hash-link';
 
 
 const Navbar = () => {
@@ -10,7 +11,7 @@ const Navbar = () => {
 
     return (
         <>
-            {/* Pre_Navbar */}
+            {/*
             <div className='lg:flex justify-between items-center lg:px-[85px] py-3 lg:py-4 space-y-4 lg:space-y-0 text-center w-full bg-gradient-to-r from-[#3E187A] to-[#994ECC] text-white'>
                 <div>
                     <p className='font-["Red_Hat_Display"] lg:tracking-widest text-xs lg:text-sm xl:text-base'><span className='font-["otomanopee-one"]'>CONTACT US ON : </span> +91 74395 37213 &nbsp;+91 94748 12394</p>
@@ -19,6 +20,7 @@ const Navbar = () => {
                     <p className='font-["Red_Hat_Display"] tracking-widest text-xs lg:text-sm xl:text-base'><span className='font-["otomanopee-one"]'>MAIL US ON : </span> &nbsp;surakshasecurity@gmail.com</p>
                 </div>
             </div>
+            */}
 
             {/* Navbar */}
             {/* FOR MOBILE, TABLET AND SMALL LAPTOPS */}
@@ -44,8 +46,10 @@ const Navbar = () => {
                     <li onClick={() => navigate('/')}>HOME</li>
                     <li onClick={() => navigate('/about')}>ABOUT</li>
                     <li onClick={() => navigate('/services')}>SERVICES</li>
-                    <li onClick={() => navigate('/career')}>CAREERS</li>
-                    <li onClick={() => navigate('/contact')}>CONTACT</li>
+                    <li className="relative group">
+                        <HashLink smooth to="/#contact">CONTACT</HashLink>
+                    </li>
+                    <li className='relative group' onClick={() => navigate('/gallery')}>GALLERY</li>
                     <button className='text-white bg-gradient-to-r from-[#3E187A] to-[#994ECC] p-2 rounded-md'>BROCHURE</button>
                 </div>
             </div>
@@ -67,9 +71,22 @@ const Navbar = () => {
                                 <li className='relative group' onClick={() => navigate('/')}>HOME</li>
                                 <li className='relative group' onClick={() => navigate('/about')}>ABOUT</li>
                                 <li className='relative group' onClick={() => navigate('/services')}>SERVICES</li>
-                                <li className='relative group' onClick={() => navigate('/career')}>CAREERS</li>
-                                <li className='relative group' onClick={() => navigate('/contact')}>CONTACT</li>
-                                <button className='bg-gradient-to-r from-[#AD1DEB] to-[#6E72FC] text-white p-2 rounded-md transition-all transform hover:scale-110 duration-150 ease-in'>BROCHURE</button>
+                                {/*<li className='relative group' onClick={() => navigate('/career')}>CAREERS</li>*/}
+                                {/*<li className='relative group' onClick={() => window.location.href = "#trusted-clients"}>CONTACT</li>*/}
+                                {/*<li className='relative group' onClick={() => window.location.replace("/#trusted-clients")}>*/}
+                                {/*    CONTACT*/}
+                                {/*</li>*/}
+                                {/*<li*/}
+                                {/*    className='relative group'*/}
+                                {/*    onClick={() => navigate("/#trusted-clients")}*/}
+                                {/*>*/}
+                                {/*    CONTACT*/}
+                                {/*</li>*/}
+                                <li className="relative group">
+                                    <HashLink smooth to="/#contact">CONTACT</HashLink>
+                                </li>
+                                <li className='relative group' onClick={() => navigate('/gallery')}>GALLERY</li>
+                            {/*    <button className='bg-gradient-to-r from-[#AD1DEB] to-[#6E72FC] text-white p-2 rounded-md transition-all transform hover:scale-110 duration-150 ease-in'>BROCHURE</button>*/}
                             </ul>
                         </div>
                     </div>
