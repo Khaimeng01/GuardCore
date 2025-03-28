@@ -79,7 +79,7 @@ import 'yet-another-react-lightbox/styles.css';
 
 // Import your images from src/images
 import creativeImg from '../images/Creative5.png';
-import creativeImg2 from '../images/Creative4.png';
+
 
 
 const Gallery = () => {
@@ -94,9 +94,9 @@ const Gallery = () => {
         { src: creativeImg },
         { src: creativeImg },
         { src: creativeImg },
-        { src: creativeImg2 },
-        { src: creativeImg2 },
-        { src: creativeImg2 },
+        { src: creativeImg },
+        { src: creativeImg },
+        { src: creativeImg },
 
         // { src: anotherImage },
     ];
