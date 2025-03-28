@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import career_about from "../assets/career_about.png"
 
 
 const CareerJoin = () => {
