@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Services from './Pages/Services'
-import Career from './Pages/Career'
-import Contact from './Pages/Contact'
-import Gallery from './Pages/Gallery'
+import Home from './pages/Home'
+import About from './pages/About'
+import Services from './pages/Services'
+import Career from './pages/Career'
+import Contact from './pages/Contact'
+import Gallery from './pages/Gallery'
 
 const App = () => {
 	return (
