@@ -21,7 +21,7 @@ const Home = () => {
                 <HomeServices />
                {/* <HomeCertificate />*/}
                {/* <CustomerReview />*/}
-                <TrustedClients />
+                {/*<TrustedClients />*/}
                 <ContactUS />
                 <Footer />
             </body>
