@@ -15,11 +15,6 @@ import { toast } from "react-toastify";
 const ContactUs = () => {
     const { register, handleSubmit } = useForm();
 
-    // const onSubmit = (data, e) => {
-    //   console.log(data);
-    //   toast.success("Message sent Successfully");
-    //   e.target.reset();
-    // };
 
     const onSubmit = (data, e) => {
         e.preventDefault(); // Prevent the default form submission behavior
@@ -63,7 +58,7 @@ const ContactUs = () => {
         <section id="contact">
             <div className="text-[#7A6960] max-w-screen-xl mx-auto px-4 py-8">
                 <h1 data-aos="fade-right" className="text-gray-900  text-3xl font-semibold text-center">
-                    Contact
+                    Contact Us
                 </h1>
 
 
@@ -72,7 +67,6 @@ const ContactUs = () => {
                 </div>
 
                 <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
-                    Let's Connect & Elevate Your Brand!
                 </p>
 
                 <div className="lg:flex gap-6">
@@ -81,7 +75,7 @@ const ContactUs = () => {
                         data-aos="fade-up"
                         className="lg:w-[40%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-blue-400 mb-7 lg:mb-0"
                     >
-                        <div className="flex gap-5 mt-3 mb-12">
+                        <div className="flex gap-5 mt-3 mb-6">
 
                             <div className="rounded-full h-fit bg-black p-2 text-white text-2xl">
                                 <IoLocationOutline />
@@ -90,11 +84,18 @@ const ContactUs = () => {
 
                             <div>
                                 <h2 className="lg:text-xl text-gray-700 font-semibold">
-                                    Address
+                                    Head Office
                                 </h2>
                                 <p className="text-sm text-slate-800">
-                                    One Ampang Avenue, Ampang, Selangor
+                                No. 34-3, Persiaran 65c, Pekeliling business centre, off Jalan pahang barat, 53000 kl.
                                 </p>
+
+                                <h2 className="lg:text-xl text-gray-700 font-semibold mt-2">Branches</h2>
+                                    <p className="text-sm text-slate-800 flex flex-wrap gap-2 mt-1">
+                                    {["PULAU PINANG", "PAHANG", "PERAK", "KUALA LUMPUR", "SABAH", "JOHOR", "MELAKA"].map((branch, idx) => (
+                                        <span key={idx} className="whitespace-nowrap">{branch}</span>
+                                    ))}
+                                    </p>
                             </div>
 
                         </div>
@@ -105,9 +106,9 @@ const ContactUs = () => {
                             </div>
                             <div>
                                 <h2 className="lg:text-xl text-gray-700 font-semibold">
-                                    Call Us
+                                    Contact Number
                                 </h2>
-                                <p className="text-sm text-slate-800">+60128251933</p>
+                                <p className="text-sm text-slate-800">+03-40319616</p>
                             </div>
                         </div>
 
@@ -117,9 +118,9 @@ const ContactUs = () => {
                             </div>
                             <div>
                                 <h2 className="lg:text-xl text-gray-700 font-semibold">
-                                    Email Us
+                                Email Address
                                 </h2>
-                                <p className="text-sm text-slate-800">connect@digitaldegensmy.com</p>
+                                <p className="text-sm text-slate-800">info@guardcoresecurity.com</p>
                             </div>
                         </div>
 
@@ -127,7 +128,7 @@ const ContactUs = () => {
                             <iframe
                                 width="100%"
                                 height="100%"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.8857713303357!2d101.7516695559557!3d3.154844338474936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37aa637603b7%3A0xd27fdd61acc6536!2sOne%20Ampang%20Avenue%2C%20Southview!5e0!3m2!1sen!2smy!4v1735904050437!5m2!1sen!2smy" loading="lazy"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.6908278985393!2d101.69086338365302!3d3.175835944753833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4819feb95669%3A0xcb57c60fac70c17c!2s34%2C%20Persiaran%2065c%2C%20Pekeliling%2C%2053000%20Kuala%20Lumpur%2C%20Wilayah%20Persekutuan%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1743999893190!5m2!1sen!2smy"
                                 referrerpolicy="no-referrer-when-downgrade"
                             ></iframe>
                         </div>

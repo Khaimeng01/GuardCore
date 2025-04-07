@@ -9,6 +9,7 @@ import TrustedClients from "../Components/TrustedClients"
 import Footer from "../Components/Footer"
 import ScrollToTop from '../Components/ScrollToTop'
 import ContactUS from '../Components/ContactUs'
+import Team from '../Components/Team'
 
 const Home = () => {
     return (
@@ -18,10 +19,15 @@ const Home = () => {
                 <Navbar />
                 <HomeBanner />
                 <HomeAbout />
+                
                 <HomeServices />
-               {/* <HomeCertificate />*/}
+                <Team/>
+               {/* <HomeCertificate /> */}
                {/* <CustomerReview />*/}
-                {/*<TrustedClients />*/}
+                
+                <TrustedClients />
+                <TrustedClients />
+
                 <ContactUS />
                 <Footer />
             </body>

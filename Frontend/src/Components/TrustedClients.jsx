@@ -15,7 +15,8 @@ const TrustedClients = () => {
             <section id="trusted-clients" className="py-16">
                 {/*<h1 className='mt-[100px] md:mt-[90px] xl:mt-[192px] mb-14 lg:mb-16 text-[#131313] font-["otomanopee-one"] text-center text-[32px] md:text-[44px] xl:text-[56px]'>OUR TRUSTED CLIENTS</h1>*/}
                 <h1  className="text-gray-900  text-3xl font-semibold text-center">
-                    Trusted Clients
+                Our Clients
+
                 </h1>
 
                 <div className="flex justify-center items-center mt-2">

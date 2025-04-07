@@ -19,7 +19,7 @@ const HomeServices = () => {
     return (
         <>
             <div className='flex flex-col space-y-[156px] mt-[34px] items-center px-5 md:mt-[80px] xl:mt-[192px]'>
-                <h1 className='text-[32px] text-[#131313] font-["otomanopee-one"] text-center md:text-[44px] xl:text-[56px]'>SERVICES WE PROVIDE</h1>
+                <h1 className='text-[32px] text-[#131313] font-["otomanopee-one"] text-center md:text-[44px] xl:text-[56px]'>OUR SERVICES</h1>
                 <div className='flex flex-col gap-[100px] items-center md:grid md:grid-rows-3 md:grid-cols-2 md:gap-7 md:gap-y-[80px] xl:grid-cols-3 xl:grid-rows-2 xl:gapx-[80px]'>
                     <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
                         <img src={image1} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />

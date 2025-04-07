@@ -9,7 +9,7 @@ const Services = () => {
     return (
         <>
             <body className="bg-[#ECECEC]">
-                <ScrollToTop />
+                {/* <ScrollToTop /> */}
                 <Navbar />
                 <ServicesBanner />
                 <ServicesAll />
