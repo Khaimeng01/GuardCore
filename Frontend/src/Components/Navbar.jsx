@@ -42,7 +42,7 @@ const Navbar = () => {
 
             <div className={`fixed z-50 top-0 left-0 w-screen h-screen bg-[#ECECEC] transition-transform flex-col duration-300 transform ${isMenuOpen ? 'translate-y-0' : '-translate-y-[110%]'} lg:hidden`}>
                 <button className='absolute top-2 right-6 text-black text-4xl' onClick={toggleMenu}>&times;</button>
-                <div className='flex flex-col items-center justify-center h-full space-y-10 font-["Philosopher"] list-none text-xl'>
+                <div className='flex flex-col items-center justify-center h-full space-y-10 font-["Rajdhani"] list-none text-2xl'>
                     <li onClick={() => navigate('/')}>HOME</li>
                     <li onClick={() => navigate('/about')}>ABOUT</li>
                     <li onClick={() => navigate('/services')}>SERVICES</li>
@@ -67,10 +67,12 @@ const Navbar = () => {
                     </div>
                     <div className='items flex items-center gap-72'>
                         <div className='flex'>
-                            <ul className='nav-ul flex font-["Philosopher"] text-[15px] font-extrabold space-x-5 xl:space-x-10 items-center cursor-pointer'>
+                            <ul className='nav-ul flex font-["Rajdhani"] text-[18px] font-extrabold space-x-5 xl:space-x-10 items-center cursor-pointer'>
                                 <li className='relative group' onClick={() => navigate('/')}>HOME</li>
                                 <li className='relative group' onClick={() => navigate('/about')}>ABOUT</li>
                                 <li className='relative group' onClick={() => navigate('/services')}>SERVICES</li>
+                                <li className='relative group' onClick={() => navigate('/services')}>INFO</li>
+
                                 {/*<li className='relative group' onClick={() => navigate('/career')}>CAREERS</li>*/}
                                 {/*<li className='relative group' onClick={() => window.location.href = "#trusted-clients"}>CONTACT</li>*/}
                                 {/*<li className='relative group' onClick={() => window.location.replace("/#trusted-clients")}>*/}

@@ -69,8 +69,8 @@ const ContactUs = () => {
                 <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
                 </p> */}
 
-                <h1 className=" text-gray-900 text-[38px] font-semibold text-center">
-                Contact Us
+<h1 className=" text-gray-900 text-[38px] font-semibold text-center font-['Rajdhani']">
+Contact Us
             </h1>
 
             <div className="flex justify-center items-center mt-2">
@@ -100,15 +100,15 @@ const ContactUs = () => {
 
 
                             <div>
-                                <h2 className="lg:text-xl text-gray-700 font-semibold">
+                                <h2 className="lg:text-2xl text-gray-700 font-semibold font-['Rajdhani']">
                                     Head Office
                                 </h2>
-                                <p className="text-sm text-slate-800">
+                                <p className="text-md text-slate-800 font-['Rajdhani']">
                                 No. 34-3, Persiaran 65c, Pekeliling business centre, off Jalan pahang barat, 53000 kl.
                                 </p>
 
-                                <h2 className="lg:text-xl text-gray-700 font-semibold mt-2">Branches</h2>
-                                    <p className="text-sm text-slate-800 flex flex-wrap gap-2 mt-1">
+                                <h2 className="lg:text-2xl text-gray-700 font-semibold mt-2 font-['Rajdhani']">Branches</h2>
+                                    <p className="text-mc text-slate-800 flex flex-wrap gap-2 mt-1 font-['Rajdhani']">
                                     {["PULAU PINANG", "PAHANG", "PERAK", "KUALA LUMPUR", "SABAH", "JOHOR", "MELAKA"].map((branch, idx) => (
                                         <span key={idx} className="whitespace-nowrap">{branch}</span>
                                     ))}
@@ -122,10 +122,10 @@ const ContactUs = () => {
                                 <IoCallOutline />
                             </div>
                             <div>
-                                <h2 className="lg:text-xl text-gray-700 font-semibold">
+                                <h2 className="lg:text-2xl text-gray-700 font-semibold font-['Rajdhani']">
                                     Contact Number
                                 </h2>
-                                <p className="text-sm text-slate-800">+03-40319616</p>
+                                <p className="text-md text-slate-800 font-['Rajdhani']">+03-40319616</p>
                             </div>
                         </div>
 
@@ -134,10 +134,10 @@ const ContactUs = () => {
                                 <TfiEmail />
                             </div>
                             <div>
-                                <h2 className="lg:text-xl text-gray-700 font-semibold">
+                                <h2 className="lg:text-2xl text-gray-700 font-semibold font-['Rajdhani']">
                                 Email Address
                                 </h2>
-                                <p className="text-sm text-slate-800">info@guardcoresecurity.com</p>
+                                <p className="text-md text-slate-800 font-['Rajdhani']">info@guardcoresecurity.com</p>
                             </div>
                         </div>
 
@@ -162,7 +162,7 @@ const ContactUs = () => {
                             <div className="md:flex gap-6">
                                 <div className="md:w-[50%]">
                                     <div>
-                                        <label htmlFor="name" className="text-gray-700 font-semibold">Name</label>
+                                        <label htmlFor="name" className=" text-xl font-['Rajdhani'] text-gray-700 font-semibold ">Name</label>
                                         <input
                                             {...register("name", { required: true })}
                                             type="text"
@@ -175,7 +175,7 @@ const ContactUs = () => {
 
                                 <div className="md:w-[50%]">
                                     <div>
-                                        <label htmlFor="email" className="text-gray-700 font-semibold" >Your Email</label>
+                                        <label htmlFor="email" className="text-xl font-['Rajdhani']  text-gray-700 font-semibold" >Your Email</label>
                                         <input
                                             {...register("email", { required: true })}
                                             type="email"
@@ -188,7 +188,7 @@ const ContactUs = () => {
                             </div>
 
                             <div>
-                                <label htmlFor="subject" className="text-gray-700 font-semibold">Subject</label>
+                                <label htmlFor="subject" className="text-xl font-['Rajdhani']  text-gray-700 font-semibold">Subject</label>
                                 <input
                                     {...register("subject", { required: true })}
                                     type="text"
@@ -199,7 +199,7 @@ const ContactUs = () => {
                             </div>
 
                             <div>
-                                <label htmlFor="message" className="text-gray-700 font-semibold" >Message</label>
+                                <label htmlFor="message" className="text-xl font-['Rajdhani']  text-gray-700 font-semibold" >Message</label>
                                 <textarea
                                     {...register("message", { required: true })}
                                     id="message"

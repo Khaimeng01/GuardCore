@@ -17,7 +17,7 @@
     bottom: -5px;
     width: 0;
     height: 2px;
-    background-color: #AD1DEB;
+    background-color: #0C004F; /* Deep blue */
     transition: width 0.3s ease;
 }
 

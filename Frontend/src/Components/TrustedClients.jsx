@@ -32,7 +32,8 @@ const TrustedClients = () => {
                     <div className="bg-blue-400 h-1 w-16 rounded"></div>
                 </div> */}
 
-                <h1 className=" text-gray-900 text-[38px] font-semibold text-center">
+<h1 className=" text-gray-900 text-[38px] font-semibold text-center font-['Rajdhani']">
+
                  Our Clients
             </h1>
 

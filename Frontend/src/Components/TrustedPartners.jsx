@@ -14,7 +14,8 @@ const TrustedPartners = () => {
         <>
             <section id="trusted-clients" className="py-16">
                 {/*<h1 className='mt-[100px] md:mt-[90px] xl:mt-[192px] mb-14 lg:mb-16 text-[#131313] font-["otomanopee-one"] text-center text-[32px] md:text-[44px] xl:text-[56px]'>OUR TRUSTED CLIENTS</h1>*/}
-                <h1 className=" text-gray-900 text-[38px] font-semibold text-center">
+                <h1 className=" text-gray-900 text-[38px] font-semibold text-center font-['Rajdhani']">
+
                  Our Partners
             </h1>
 

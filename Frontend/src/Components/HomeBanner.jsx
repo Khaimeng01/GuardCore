@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import banner1 from "../assets/banner1.png";
 import banner2 from "../assets/homeBanner/Image_5.png";
 import banner3 from "../assets/homeBanner/Image_3.png";
+import banner4 from "../assets/homeAboutUs/Image_3.png";
 
 
 import { FaWhatsapp } from "react-icons/fa";
@@ -13,7 +14,7 @@ const HomeBanner = () => {
     const navigate = useNavigate();
 
     const banner = {
-        img: banner2 ,
+        img: banner4 ,
         title: "CHOOSE GUARDCORE",
         subtitle: "STAY HARDCORE",
         description: "Guardcore Security Services is your trusted partner in safeguarding what matters most. We provide professional, results-driven security solutions for individuals, businesses, and communities. Our team is dedicated to delivering reliable protection with unmatched professionalism and commitment.",
@@ -38,13 +39,13 @@ const HomeBanner = () => {
 
 
             <div className='flex flex-col justify-center w-full h-auto sm:px-8 md:items-center lg:items-start xl:px-0'>
-                <h1 className='font-["otomanopee-one"] text-[38px] text-[#131313] mb-3 sm:text-[44px] md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] 2xl:text-[72px]'>{banner.title}</h1>
-                <h1 className='font-["otomanopee-one"] text-[38px] text-[#131313] mb-3 sm:text-[44px] md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] 2xl:text-[72px]'>{banner.subtitle}</h1>
+                <h1 className='font-["Rajdhani"] font-semibold text-[38px] text-[#131313] mb-3 sm:text-[44px] md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] 2xl:text-[72px]'>{banner.title}</h1>
+                <h1 className='font-["Rajdhani"] font-semibold text-[38px] text-[#131313] mb-3 sm:text-[44px] md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] 2xl:text-[72px]'>{banner.subtitle}</h1>
                 <div className='flex items-center gap-2 mb-5 xl:gap-4'>
                     <div className='w-[47px] h-[2px] bg-black md:w-[56px] xl:w-[78px]'></div>
-                    <p className='font-["Red_Hat_Display"] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px]'>Trusted Security Solutions</p>
+                    <p className='font-["Rajdhani"] font-semibold text text-[18px] sm:text-[20px] md:text-[22px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px]'>Trusted Security Solutions</p>
                 </div>
-                <p className='font-["Philosopher"] text-[#3F3F3F] text-sm font-medium mb-4 sm:text-[18px] sm:leading-6 md:text-center md:max-w-[670px] lg:text-base lg:text-start xl:text-[18px] xl:max-w-[570px] xl:mb-11'>
+                <p className='font-["Rajdhani"] text-[#3F3F3F] text-md font-medium mb-4 sm:text-[18px] sm:leading-6 md:text-center md:max-w-[670px] lg:text-base lg:text-start xl:text-[18px] xl:max-w-[570px] xl:mb-11'>
                     {banner.description}
                 </p>
                 <div className='flex flex-row gap-3 md:gap-6'>
