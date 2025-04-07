@@ -10,6 +10,7 @@ import Footer from "../Components/Footer"
 import ScrollToTop from '../Components/ScrollToTop'
 import ContactUS from '../Components/ContactUs'
 import Team from '../Components/Team'
+import TrustedPartners from '../Components/TrustedPartners'
 
 const Home = () => {
     return (
@@ -26,7 +27,7 @@ const Home = () => {
                {/* <CustomerReview />*/}
                 
                 <TrustedClients />
-                <TrustedClients />
+                <TrustedPartners />
 
                 <ContactUS />
                 <Footer />

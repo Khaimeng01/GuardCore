@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import banner1 from "../assets/banner1.png";
 import banner2 from "../assets/homeBanner/Image_2.png";
+import banner3 from "../assets/homeBanner/Image_3.png";
+
 
 import { FaWhatsapp } from "react-icons/fa";
 import { HashLink } from 'react-router-hash-link';
@@ -15,7 +17,13 @@ const HomeBanner = () => {
         title: "CHOOSE GUARDCORE",
         subtitle: "STAY HARDCORE",
         description: "Guardcore Security Services is your trusted partner in safeguarding what matters most. We provide professional, results-driven security solutions for individuals, businesses, and communities. Our team is dedicated to delivering reliable protection with unmatched professionalism and commitment.",
-        button1: { text: "CONTACT US", gradient: "from-[#753A88] to-[#CC2B5E]", textColor: "text-white" },
+        button1: {
+            text: "CONTACT US",
+            gradient: "bg-[#FF6A00]",
+            textColor: "text-white"
+          }
+          
+          ,
         button2: { text: "VISIT WEBSITE", border: "border-[#6100AB]", textColor: "text-black" },
     };
 

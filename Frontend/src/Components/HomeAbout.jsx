@@ -77,24 +77,30 @@ const HomeAbout = () => {
             </div> */}
 
             {/* About */}
-            <div className='md:min-h-[635px] mt-12 w-full h-full bg-gradient-to-t from-[#A88BEB]/50 via-[#A88BEB]/50 to-[#ECECEC] lg:bg-gradient-to-t lg:from-[#A88BEB]/50 lg:via-[#A88BEB]/50 lg:to-[#A88BEB]/50'>
+            {/* <div className='md:min-h-[635px] mt-12 w-full h-full bg-gradient-to-t from-[#A88BEB]/50 via-[#A88BEB]/50 to-[#ECECEC] lg:bg-gradient-to-t lg:from-[#A88BEB]/50 lg:via-[#A88BEB]/50 lg:to-[#A88BEB]/50'> */}
+            <div className='md:min-h-[635px] mt-12 w-full h-full bg-[#2D2D35]'>
+    
                 <div className='lg:flex items-center md:min-h-[635px]  space-y-6 lg:gap-14 2xl:gap-28 mx-auto max-w-[400px] md:max-w-[600px] lg:max-w-[1150px] xl:max-w-[1330px] 2xl:max-w-[1365px] pt-16 lg:pt-2 pb-8 lg:pb-0 px-4 xl:px-1'>
                     <div className='lg:hidden'>
                         {/* <h1 className='font-["otomanopee-one"] text-[28px] text-[#131313] pb-3'>WELCOME TO</h1> */}
-                        <h1 className='font-["otomanopee-one"] lg:text-4xl xl:text-5xl text-[#131313]'>GUARDCORE SECURITY SERVICES</h1>
+                        <h1 className='font-["otomanopee-one"] lg:text-4xl xl:text-5xl text-[#E0E0E0]'>GUARDCORE SECURITY SERVICES</h1>
 
                     </div>
                     <img src={home_about2} alt="" className='lg:w-[520px] xl:w-[650px]' />
                     <div className='lg:space-y-14' data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="500">
                         <div className='hidden lg:block'>
                             {/* <h1 className='font-["otomanopee-one"] lg:text-4xl xl:text-5xl text-[#131313] pb-6'>WELCOME TO</h1> */}
-                            <h1 className='font-["otomanopee-one"] lg:text-4xl xl:text-5xl text-[#131313]'>GUARDCORE SECURITY SERVICES</h1>
+                            <h1 className='font-["otomanopee-one"] lg:text-4xl xl:text-5xl text-[#E0E0E0]'>GUARDCORE SECURITY SERVICES</h1>
                             </div>
-                        <p className='font-["Philosopher"] text-[#131313] leading-[17px] xl:leading-5 text-sm xl:text-lg text-justify'>
+                        <p className='font-["Philosopher"] text-[#E0E0E0] leading-[17px] xl:leading-5 text-sm xl:text-lg text-justify'>
                         Empowering Safety, Ensuring Protection. Welcome to GUARDCORE Security Services, your trusted partner in safeguarding what matters most. As a premier provider of professional security solutions, we take pride in our unwavering commitment to delivering unparalleled protection for individuals, businesses and communities. We are committed to making the name of GUARDCORE Security Services as a testimony of the total professionalism and dedication of our team. We provide professional and result-oriented services to our clients.
                         </p>
                         <div className='flex flex-row gap-3 md:gap-5 pt-5 lg:pt-0'>
-                            <button onClick={() => { navigate("/about") }} className='font-["Montserrat"] font-bold bg-[#CC2B5E] rounded-[5px] text-white xl:text-base lg:text-sm text-xs xl:px-6 xl:py-4 lg:px-5 py-3 px-3 transition-transform transform hover:scale-110 duration-150 ease-in'>ABOUT US </button>
+                            <button
+                                onClick={() => { navigate("/about") }}
+                                className='font-["Montserrat"] font-bold bg-[#FF6A00] rounded-[5px] text-white xl:text-base lg:text-sm text-xs xl:px-6 xl:py-4 lg:px-5 py-3 px-3 transition-transform transform hover:scale-110 duration-150 ease-in'>
+                                ABOUT US
+                            </button>
                             {/* <button onClick={() => { navigate("/about") }} className='font-["Montserrat"] font-bold border-2 border-[#6100AB] xl:text-base lg:text-sm text-xs xl:px-6 xl:py-4 lg:px-5 py-3 px-3 transition-all duration-150 ease-in hover:bg-[#131313] hover:text-white'>MORE ABOUT US</button> */}
                         </div>
                     </div>

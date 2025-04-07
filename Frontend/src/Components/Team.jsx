@@ -36,22 +36,26 @@ const Team = () => {
 
     return (
         
-        <div className="text-[#7A6960] pt-20">
+        <div className="text-[#7A6960] pt-20 ">
 
             {/* <h1 data-aos="fade-right" className=" text-gray-900 text-3xl font-semibold text-center"> */}
-            <h1 className=" text-gray-900 text-3xl font-semibold text-center">
+            <h1 className=" text-gray-900 text-[40px] font-semibold text-center">
                  Board of Directors
             </h1>
 
             <div className="flex justify-center items-center mt-2">
-                <div className="bg-blue-400 h-1 w-16 rounded"></div>
+                <div className="bg-[#0C004F] h-1 w-16 rounded"></div>
             </div>
+{/* 
+            <h1 className='text-[32px] text-[#131313] font-["Playfair_Display"] text-center md:text-[44px] xl:text-[56px]'>BOARD OF DIRECTORS</h1>
 
-            {/* <h1 className='text-[32px] text-[#131313] font-["otomanopee-one"] text-center md:text-[44px] xl:text-[56px]'> BOARD OF DIRECTORS</h1> */}
+            <div className="flex justify-center items-center mt-2">
+                <div className="bg-blue-400 h-1 w-16 rounded"></div>
+            </div>  */}
 
+            <p className="text-[#0C004F] text-center mt-7 mb-10 text-lg px-4 leading-relaxed">
+</p>
 
-            <p className="text-gray-700 text-center mt-7 mb-10 text-lg px-4 leading-relaxed">
-            </p>
 
 
             <div className="flex flex-col justify-center sm:flex-row gap-6 p-5 lg:p-0 items-center">
