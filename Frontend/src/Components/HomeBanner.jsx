@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import banner1 from "../assets/banner1.png";
-import banner2 from "../assets/homeBanner/Image_2.png";
+import banner2 from "../assets/homeBanner/Image_5.png";
 import banner3 from "../assets/homeBanner/Image_3.png";
 
 
@@ -13,7 +13,7 @@ const HomeBanner = () => {
     const navigate = useNavigate();
 
     const banner = {
-        img: banner1 ,
+        img: banner2 ,
         title: "CHOOSE GUARDCORE",
         subtitle: "STAY HARDCORE",
         description: "Guardcore Security Services is your trusted partner in safeguarding what matters most. We provide professional, results-driven security solutions for individuals, businesses, and communities. Our team is dedicated to delivering reliable protection with unmatched professionalism and commitment.",
@@ -29,11 +29,14 @@ const HomeBanner = () => {
 
     return (
         <div className='w-screen h-auto flex flex-col px-5 py-1 items-center pb-0 mx-auto gap-5 sm:gap-10 md:gap-12 lg:flex-row-reverse lg:gap-10 lg:pt-16 lg:max-w-[1138px] xl:pl-8 xl:max-w-[1338px] 2xl:max-w-[1518px] 2xl:gap-6 2xl:pt-8 2xl:pl-10 2xl:pr-0'>
+            
             <img
-                src={banner.img}
-                alt=""
-                className='object-fill w-screen h-auto sm:max-w-[640px] md:max-w-[750px] lg:min-w-[520px] xl:min-w-[700px] 2xl:max-w-[900px]'
-            />
+  src={banner.img}
+  alt=""
+  className="object-contain w-full h-auto max-h-[480px] sm:max-h-[540px] md:max-h-[600px] lg:max-h-[580px] xl:max-h-[620px]"
+/>
+
+
             <div className='flex flex-col justify-center w-full h-auto sm:px-8 md:items-center lg:items-start xl:px-0'>
                 <h1 className='font-["otomanopee-one"] text-[38px] text-[#131313] mb-3 sm:text-[44px] md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] 2xl:text-[72px]'>{banner.title}</h1>
                 <h1 className='font-["otomanopee-one"] text-[38px] text-[#131313] mb-3 sm:text-[44px] md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] 2xl:text-[72px]'>{banner.subtitle}</h1>

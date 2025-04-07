@@ -36,10 +36,10 @@ const Team = () => {
 
     return (
         
-        <div className="text-[#7A6960] pt-20 ">
+        <div className="text-[#7A6960] pt-20 px-10">
 
             {/* <h1 data-aos="fade-right" className=" text-gray-900 text-3xl font-semibold text-center"> */}
-            <h1 className=" text-gray-900 text-[40px] font-semibold text-center">
+            <h1 className=" text-gray-900 text-[38px] font-semibold text-center">
                  Board of Directors
             </h1>
 

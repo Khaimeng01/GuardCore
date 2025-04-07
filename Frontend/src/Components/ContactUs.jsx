@@ -57,7 +57,7 @@ const ContactUs = () => {
 
         <section id="contact">
             <div className="text-[#7A6960] max-w-screen-xl mx-auto px-4 py-8">
-                <h1 data-aos="fade-right" className="text-gray-900  text-3xl font-semibold text-center">
+                {/* <h1 data-aos="fade-right" className="text-gray-900  text-3xl font-semibold text-center">
                     Contact Us
                 </h1>
 
@@ -67,13 +67,30 @@ const ContactUs = () => {
                 </div>
 
                 <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
-                </p>
+                </p> */}
+
+                <h1 className=" text-gray-900 text-[38px] font-semibold text-center">
+                Contact Us
+            </h1>
+
+            <div className="flex justify-center items-center mt-2">
+                <div className="bg-[#0C004F] h-1 w-16 rounded"></div>
+            </div>
+{/* 
+            <h1 className='text-[32px] text-[#131313] font-["Playfair_Display"] text-center md:text-[44px] xl:text-[56px]'>BOARD OF DIRECTORS</h1>
+
+            <div className="flex justify-center items-center mt-2">
+                <div className="bg-blue-400 h-1 w-16 rounded"></div>
+            </div>  */}
+
+            <p className="text-[#0C004F] text-center mt-7 mb-10 text-lg px-4 leading-relaxed">
+</p>
 
                 <div className="lg:flex gap-6">
                     {/* map */}
                     <div
                         data-aos="fade-up"
-                        className="lg:w-[40%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-blue-400 mb-7 lg:mb-0"
+                        className="lg:w-[40%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-[#0C004F] mb-7 lg:mb-0"
                     >
                         <div className="flex gap-5 mt-3 mb-6">
 
@@ -138,7 +155,7 @@ const ContactUs = () => {
                     <div
                         data-aos="fade-up"
                         data-aos-duration="1600"
-                        className="lg:w-[60%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-blue-400"
+                        className="lg:w-[60%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-[#0C004F]"
                     >
                         <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -192,7 +209,7 @@ const ContactUs = () => {
                             </div>
 
                             <div className="flex justify-center m-3">
-                                <button className="bg-blue-400 hover:bg-blue-300 hover:shadow hover:shadow-blue-300 text-white rounded-3xl px-4 py-2 w-fit text-lg transition-all duration-300">
+                                <button className="bg-[#FF6A00] hover:bg-[#e65c00] hover:shadow hover:shadow-blue-300 text-white rounded-3xl px-4 py-2 w-fit text-lg transition-all duration-300">
                                     Send Message
                                 </button>
                             </div>

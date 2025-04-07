@@ -23,14 +23,31 @@ const TrustedClients = () => {
         <>
             <section id="trusted-clients" className="py-16 ">
                 {/*<h1 className='mt-[100px] md:mt-[90px] xl:mt-[192px] mb-14 lg:mb-16 text-[#131313] font-["otomanopee-one"] text-center text-[32px] md:text-[44px] xl:text-[56px]'>OUR TRUSTED CLIENTS</h1>*/}
-                <h1  className="text-gray-900  text-3xl font-semibold text-center">
+                {/* <h1  className="text-gray-900  text-3xl font-semibold text-center">
                 Our Clients
 
                 </h1>
 
                 <div className="flex justify-center items-center my-5">
                     <div className="bg-blue-400 h-1 w-16 rounded"></div>
-                </div>
+                </div> */}
+
+                <h1 className=" text-gray-900 text-[38px] font-semibold text-center">
+                 Our Clients
+            </h1>
+
+            <div className="flex justify-center items-center mt-2">
+                <div className="bg-[#0C004F] h-1 w-16 rounded"></div>
+            </div>
+{/* 
+            <h1 className='text-[32px] text-[#131313] font-["Playfair_Display"] text-center md:text-[44px] xl:text-[56px]'>BOARD OF DIRECTORS</h1>
+
+            <div className="flex justify-center items-center mt-2">
+                <div className="bg-blue-400 h-1 w-16 rounded"></div>
+            </div>  */}
+
+            <p className="text-[#0C004F] text-center mt-7 mb-10 text-lg px-4 leading-relaxed">
+</p>
 
                 <Marquee autoFill gradient gradientWidth={20} gradientColor='#ECECEC'>
                     <div className='flex items-center gap-4 md:gap-6 lg:gap-8 xl:gap-10'>
