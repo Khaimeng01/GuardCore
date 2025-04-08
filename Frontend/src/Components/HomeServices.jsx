@@ -65,7 +65,7 @@ const HomeServices = () => {
                     <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
                         <img src={image2} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col items-center gap-4'>
-                            <p className='text-xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>MANAGEMENT OF SECURITY AND SURVEILLANCE SYSTEMS                            </p>
+                            <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>MANAGEMENT OF SECURITY AND SURVEILLANCE SYSTEMS                            </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
                                 onClick={() => navigate("/services#securityGuards")}
