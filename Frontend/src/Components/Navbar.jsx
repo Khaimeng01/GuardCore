@@ -28,7 +28,7 @@ const Navbar = () => {
                 <div className='logo flex items-center space-x-2'>
                     <img src={logo} alt="logo" className='w-[47px] h-[55px]' />
                     <div className='space-y-0.5'>
-                        <p className='font-["otomanopee-one"] text-[13px]'>SURAKSHA SECURITY</p>
+                        <p className='font-["Rajdhani"] text-[20px] font-semibold'>GUARDCORE</p>
                         <div className='h-0.5 bg-black'></div>
                         <p className='font-["Red_Hat_Display"] text-[11px] font-semibold'>Trusted Security Solutions</p>
                     </div>
