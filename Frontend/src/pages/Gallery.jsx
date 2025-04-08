@@ -242,7 +242,7 @@ const Gallery = () => {
 {/* Responsive filter buttons */}
 <div className="w-full mb-8">
 {/* Mobile: Dropdown filter */}
-    <div className="block md:hidden px-4 mb-6">
+    <div className="block md:hidden mb-6 ">
         <label htmlFor="mobile-category" className="block text-sm font-medium text-gray-700 mb-2">
             Select a category
         </label>
