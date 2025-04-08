@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/logo-removebg-preview.png';
+// import logo from '../assets/logo-removebg-preview.png';
+import logo from '../assets/logo_guardcore.png';
+
 import { HashLink } from 'react-router-hash-link';
 
 
@@ -26,11 +28,17 @@ const Navbar = () => {
             {/* FOR MOBILE, TABLET AND SMALL LAPTOPS */}
             <div className='sticky top-0 flex justify-between items-center px-5 py-1 lg:hidden z-50 bg-[#ECECEC]/35 backdrop-blur-lg'>
                 <div className='logo flex items-center space-x-2'>
-                    <img src={logo} alt="logo" className='w-[47px] h-[55px]' />
+                    {/* <img src={logo} alt="logo" className='w-[47px] h-[55px]' onClick={() => navigate('/')} /> */}
+                    <img 
+  src={logo} 
+  alt="logo" 
+  className="w-[130px] h-auto lg:w-[12px] lg:h-auto xl:w-[40px] xl:h-auto" 
+  onClick={() => navigate('/')} 
+/>
                     <div className='space-y-0.5'>
-                        <p className='font-["Rajdhani"] text-[20px] font-semibold'>GUARDCORE</p>
-                        <div className='h-0.5 bg-black'></div>
-                        <p className='font-["Red_Hat_Display"] text-[11px] font-semibold'>Trusted Security Solutions</p>
+                        <p className='font-["Rajdhani"] font-semibold text-[20px] '  onClick={() => navigate('/')}>GUARDCORE</p>
+                        <div className='h-0.5 bg-black'  onClick={() => navigate('/')}></div>
+                        <p className='font-["Rajdhani"] text-[11px] font-semibold'  onClick={() => navigate('/')}>Trusted Security Solutions</p>
                     </div>
                 </div>
                 <div className='flex flex-col space-y-1 cursor-pointer' onClick={toggleMenu}>
@@ -57,11 +65,18 @@ const Navbar = () => {
             <div className='sticky top-0 px-6 xl:px-20 z-50 bg-[#ECECEC]/35 backdrop-blur-lg'>
                 <div className='hidden lg:flex justify-between items-center w-full px-14 py-1 rounded-[10px]'>
                     <div className='flex items-center gap-2'>
-                        <img src={logo} alt="logo" className='lg:w-[48px] lg:h-[56px] xl:w-[58px] xl:h-[66px]' />
+                        {/* <img src={logo} alt="logo" className='lg:w-[48px] lg:h-[56px] xl:w-[58px] xl:h-[66px] '  onClick={() => navigate('/')} /> */}
+                        <img 
+  src={logo} 
+  alt="logo" 
+  className="lg:w-[48px] lg:h-auto xl:w-[130px] xl:h-auto" 
+  onClick={() => navigate('/')} 
+/>
+
                         <div>
-                            <p className='font-["otomanopee-one"] text-lg'>SURAKSHA SECURITY</p>
-                            <div className='h-0.5 bg-black'></div>
-                            <p className='font-["Red_Hat_Display"] text-sm font-semibold'>Trusted Security Solutions</p>
+                            <p className='font-["Rajdhani"] font-semibold text-[25px] cursor-pointer'  onClick={() => navigate('/')} >GUARDCORE</p>
+                            <div className='h-0.5 bg-black cursor-pointer'  onClick={() => navigate('/')}></div>
+                            <p className='font-["Rajdhani"] text-md font-semibold cursor-pointer'  onClick={() => navigate('/')}>Trusted Security Solutions</p>
                         </div>
                     </div>
                     <div className='items flex items-center gap-72'>
