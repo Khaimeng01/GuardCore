@@ -22,7 +22,7 @@
     "react-slick": "^0.30.2",
     "react-toastify": "^11.0.5",
     "slick-carousel": "^1.8.1",
-    "yet-another-react-lightbox": "^3.21.8"
+    "yet-another-react-lightbox": "^3.22.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
