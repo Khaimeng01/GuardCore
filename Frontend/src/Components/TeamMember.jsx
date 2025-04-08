@@ -82,7 +82,7 @@ const TeamMember = () => {
                             <img src={image3} alt="" className="relative z-20 h-[300px] mx-auto md:h-[350px] xl:h-[340px] xl:max-w-[300px] " />
                         </div>
                         <div className="flex flex-col items-center gap-2 xl:max-w-[350px]">
-                            <h1 className="text-[22px] text-[#131313] font-['Rajdhani'] font-semibold">TEAM MEMBER NAME</h1>
+                            <h1 className="text-[22px] text-[#131313] font-['Rajdhani'] font-semibold">DATO T. MURUGIAH</h1>
                             <p className="text-[18px] font-['Rajdhani']">CHAIRMAN AND ADVISOR SECUREX BERHAD</p>
                             <p className="text-sm font-['Rajdhani'] text-center max-w-[350px]">
                             In these challenging times, our leadership stands as a beacon of strength and clarity. With an unwavering focus on excellence and innovation, we have solidified our reputation as a trusted leader in the security industry. Our commitment has made a profound impact on the safety and well-being of those we serve. Dedicated to upholding the highest standards, we continue to make a meaningful difference every day, ensuring trust, reliability, and excellence in everything we do.                                    
