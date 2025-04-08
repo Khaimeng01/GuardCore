@@ -32,13 +32,13 @@ const Navbar = () => {
                     <img 
   src={logo} 
   alt="logo" 
-  className="w-[130px] h-auto lg:w-[12px] lg:h-auto xl:w-[40px] xl:h-auto" 
+  className="w-[130px] h-auto lg:w-[150px] lg:h-auto xl:w-[200px] xl:h-auto" 
   onClick={() => navigate('/')} 
 />
                     <div className='space-y-0.5'>
                         <p className='font-["Rajdhani"] font-semibold text-[20px] '  onClick={() => navigate('/')}>GUARDCORE</p>
                         <div className='h-0.5 bg-black'  onClick={() => navigate('/')}></div>
-                        <p className='font-["Rajdhani"] text-[11px] font-semibold'  onClick={() => navigate('/')}>Trusted Security Solutions</p>
+                        <p className='font-["Rajdhani"] text-[11px] font-semibold'  onClick={() => navigate('/')}>Choose Guardcore Stay Hardcore</p>
                     </div>
                 </div>
                 <div className='flex flex-col space-y-1 cursor-pointer' onClick={toggleMenu}>
@@ -76,7 +76,7 @@ const Navbar = () => {
                         <div>
                             <p className='font-["Rajdhani"] font-semibold text-[25px] cursor-pointer'  onClick={() => navigate('/')} >GUARDCORE</p>
                             <div className='h-0.5 bg-black cursor-pointer'  onClick={() => navigate('/')}></div>
-                            <p className='font-["Rajdhani"] text-md font-semibold cursor-pointer'  onClick={() => navigate('/')}>Trusted Security Solutions</p>
+                            <p className='font-["Rajdhani"] text-md font-semibold cursor-pointer'  onClick={() => navigate('/')}>Choose Guardcore Stay Hardcore</p>
                         </div>
                     </div>
                     <div className='items flex items-center gap-72'>
