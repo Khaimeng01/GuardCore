@@ -39,7 +39,7 @@ const HomeServices = () => {
     return (
         <>
             <div className='flex flex-col space-y-[156px] mt-[34px] items-center px-5 md:mt-[80px] xl:mt-[192px]'>
-                <h1 className='font-["Rajdhani"] font-semibold text-[32px] text-[#131313] font-["otomanopee-one"] text-center md:text-[44px] xl:text-[56px]'>OUR SERVICES</h1>
+                <h1 className='font-["Rajdhani"] font-semibold text-[32px] text-[#131313] font-["Rajdhani"]  text-center md:text-[44px] xl:text-[56px]'>OUR SERVICES</h1>
                 
                 
                 <div className='flex flex-col gap-[100px] items-center md:grid md:grid-rows-3 md:grid-cols-2 md:gap-7 md:gap-y-[80px] xl:grid-cols-3 xl:grid-rows-2 xl:gapx-[80px]'>

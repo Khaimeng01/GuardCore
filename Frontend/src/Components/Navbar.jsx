@@ -50,7 +50,6 @@ const Navbar = () => {
                         <HashLink smooth to="/#contact">CONTACT</HashLink>
                     </li>
                     <li className='relative group' onClick={() => navigate('/gallery')}>GALLERY</li>
-                    <button className='text-white bg-gradient-to-r from-[#3E187A] to-[#994ECC] p-2 rounded-md'>BROCHURE</button>
                 </div>
             </div>
 
