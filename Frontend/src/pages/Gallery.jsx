@@ -144,6 +144,8 @@ import Footer from '../Components/Footer';
 import ScrollToTop from '../Components/ScrollToTop';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
+import { useMemo } from 'react';
+
 
 const Gallery = () => {
   const [index, setIndex] = useState(-1);
@@ -159,7 +161,11 @@ const Gallery = () => {
       .sort((a, b) => a.name.localeCompare(b.name));
   };
 
-  const mainImages = importImages(import.meta.glob('../assets/galleryMain/*.{jpg,JPG,jpeg,JPEG,png,PNG}', { eager: true }));
+//   const mainImages = importImages(import.meta.glob('../assets/galleryMain/*.{jpg,JPG,jpeg,JPEG,png,PNG}', { eager: true }));
+    
+    const mainImages = useMemo(() =>
+        importImages(import.meta.glob('../assets/galleryMain/*.{jpg,jpeg,png}', { eager: true }))
+    , []);
 
   const [guards, setGuards] = useState([]);
   const [bodyguards, setBodyguards] = useState([]);

@@ -4,15 +4,17 @@ import ServicesBanner from "../Components/ServicesBanner"
 import ServicesAll from "../Components/ServicesAll"
 import Footer from "../Components/Footer"
 import ScrollToTop from "../Components/ScrollToTop"
+import ServiceAreas from "../Components/ServiceArea"
 
 const Services = () => {
     return (
         <>
             <body className="bg-[#ECECEC]">
-                {/* <ScrollToTop /> */}
+                <ScrollToTop />
                 <Navbar />
                 <ServicesBanner />
                 <ServicesAll />
+                <ServiceAreas/>
                 <Footer />
             </body>
         </>

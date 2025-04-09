@@ -84,7 +84,7 @@ const HomeAbout = () => {
                 <div className='lg:flex items-center md:min-h-[635px]  space-y-6 lg:gap-14 2xl:gap-28 mx-auto max-w-[400px] md:max-w-[600px] lg:max-w-[1150px] xl:max-w-[1330px] 2xl:max-w-[1365px] pt-16 lg:pt-2 pb-8 lg:pb-0 px-4 xl:px-1'>
                     <div className='lg:hidden'>
                         {/* <h1 className='font-["otomanopee-one"] text-[28px] text-[#131313] pb-3'>WELCOME TO</h1> */}
-                        <h1 className='font-["Rajdhani"] text-2xl lg:text-4xl xl:text-5xl text-[#E0E0E0]'>GUARDCORE SECURITY SERVICES</h1>
+                        <h1 className='font-["Rajdhani"] text-4xl lg:text-4xl xl:text-5xl text-[#E0E0E0]'>GUARDCORE SECURITY SERVICES</h1>
 
                     </div>
                     <img src={home_about3} alt="" className='lg:w-[520px] xl:w-[650px]' />

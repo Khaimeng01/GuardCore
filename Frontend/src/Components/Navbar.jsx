@@ -54,6 +54,7 @@ const Navbar = () => {
                     <li onClick={() => navigate('/')}>HOME</li>
                     <li onClick={() => navigate('/about')}>ABOUT</li>
                     <li onClick={() => navigate('/services')}>SERVICES</li>
+                    <li className='relative group' onClick={() => navigate('/info')}>INFO</li>
                     <li className="relative group">
                         <HashLink smooth to="/#contact">CONTACT</HashLink>
                     </li>
@@ -67,11 +68,11 @@ const Navbar = () => {
                     <div className='flex items-center gap-2'>
                         {/* <img src={logo} alt="logo" className='lg:w-[48px] lg:h-[56px] xl:w-[58px] xl:h-[66px] '  onClick={() => navigate('/')} /> */}
                         <img 
-  src={logo} 
-  alt="logo" 
-  className="lg:w-[48px] lg:h-auto xl:w-[130px] xl:h-auto" 
-  onClick={() => navigate('/')} 
-/>
+                            src={logo} 
+                            alt="logo" 
+                            className="lg:w-[48px] lg:h-auto xl:w-[130px] xl:h-auto cursor-pointer" 
+                            onClick={() => navigate('/')} 
+                            />
 
                         <div>
                             <p className='font-["Rajdhani"] font-semibold text-[25px] cursor-pointer'  onClick={() => navigate('/')} >GUARDCORE</p>
@@ -85,7 +86,7 @@ const Navbar = () => {
                                 <li className='relative group' onClick={() => navigate('/')}>HOME</li>
                                 <li className='relative group' onClick={() => navigate('/about')}>ABOUT</li>
                                 <li className='relative group' onClick={() => navigate('/services')}>SERVICES</li>
-                                <li className='relative group' onClick={() => navigate('/services')}>INFO</li>
+                                <li className='relative group' onClick={() => navigate('/info')}>INFO</li>
 
                                 {/*<li className='relative group' onClick={() => navigate('/career')}>CAREERS</li>*/}
                                 {/*<li className='relative group' onClick={() => window.location.href = "#trusted-clients"}>CONTACT</li>*/}
