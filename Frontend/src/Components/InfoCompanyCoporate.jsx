@@ -88,7 +88,7 @@ const InfoCompanyCoporate = () => {
         </div>
 
         
-        <h4 className="text-[32px] lg:text-[38px] text-[#0A004B]  font-semibold text-left text-[#131313] mb-5 font-['Rajdhani']">
+        <h4 className="text-[29.5px] lg:text-[38px] text-[#0A004B]  font-semibold text-left text-[#131313] mb-5 font-['Rajdhani']">
         Licensing and Certifications
         </h4>
 
