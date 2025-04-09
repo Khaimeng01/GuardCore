@@ -36,14 +36,13 @@ const ServicesAll = () => {
               </div>
               <div className="flex flex-col items-center gap-2">
                 <h1 className="text-[22px] text-[#131313] font-['Rajdhani'] font-semibold text-center leading-tight">
-                  MAJ GEN (R) DATO ZAINAL <br /> BIN ABDUL MANAF RMAF
+                SECURITY GUARDS
                 </h1>
-                <p className="text-[18px] font-['Rajdhani'] font-medium text-center">CHAIRMAN</p>
+                {/* <p className="text-[18px] font-['Rajdhani'] font-medium text-center">CHAIRMAN</p> */}
                 <div className="h-[3px] w-[40px] bg-yellow-400 rounded-sm my-1"></div>
                 <p className="text-sm font-['Rajdhani'] text-center text-justify text-[#333] leading-relaxed">
-                  In the face of unprecedented challenges, our professionalism and vigilance are exceptional. 
-                  Your efforts have not only maintained our reputation as a leader in the security industry 
-                  but have also made a meaningful difference in the lives of those we serve.
+                Our trained and licensed static guards provide a constant, visible security presence to deter unauthorized access and ensure the safety of your premises. Whether stationed at entrances, reception areas, or strategic internal points, our guards are skilled in monitoring access, conducting routine patrols, and responding to incidents swiftly. Ideal for commercial buildings, residential complexes, construction sites, and retail outlets, static guards are a frontline defense that offer both a security presence and peace of mind          
+
                 </p>
               </div>
             </div>
@@ -58,8 +57,8 @@ const ServicesAll = () => {
                   <h1 className="text-[32px] text-[#131313] font-['Rajdhani'] font-bold leading-tight">
                   SECURITY GUARDS
                   </h1>
-                  {/* <h2 className="text-[20px] text-[#1c1c1c] font-semibold font-['Rajdhani']">CHAIRMAN</h2>
-                  <div className="h-[3px] w-[50px] bg-yellow-400 rounded-sm my-1"></div> */}
+                  {/* <h2 className="text-[20px] text-[#1c1c1c] font-semibold font-['Rajdhani']">CHAIRMAN</h2> */}
+                  <div className="h-[3px] w-[50px] bg-yellow-400 rounded-sm my-1"></div>
                   <p className="text-md font-['Rajdhani'] text-[#333] leading-relaxed max-w-[600px] text-justify">
                   Our trained and licensed static guards provide a constant, visible security presence to deter unauthorized access and ensure the safety of your premises. Whether stationed at entrances, reception areas, or strategic internal points, our guards are skilled in monitoring access, conducting routine patrols, and responding to incidents swiftly. Ideal for commercial buildings, residential complexes, construction sites, and retail outlets, static guards are a frontline defense that offer both a security presence and peace of mind          
                   </p>
