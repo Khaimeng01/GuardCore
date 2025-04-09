@@ -17,7 +17,7 @@ const About = () => {
                 <AboutIntro />
                 <AboutMission />
                 <section id="trusted-clients">
-                    z<TeamMember />
+                    <TeamMember />
 
                 </section>
 
