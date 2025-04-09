@@ -14,7 +14,7 @@ const Info = () => {
             <body className="bg-[#ECECEC]">
                 <ScrollToTop />
                 <Navbar />
-                <CompanyInformation/>
+                {/* <CompanyInformation/> */}
                 <CompanyCoporate/>
                 {/* <ServicesBanner />
                 <ServicesAll />
