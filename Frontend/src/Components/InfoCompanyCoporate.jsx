@@ -22,7 +22,7 @@ const InfoCompanyCoporate = () => {
   return (
     <div className="bg-[#ECECEC] py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-[32px] lg:text-[38px] text-[#0A004B]  font-semibold text-left text-[#131313] mb-5 font-['Rajdhani']">
+        <h2 className="text-[32px] lg:text-[38px] text-[#0A004B]  font-semibold text-left  mb-5 font-['Rajdhani']">
           Corporate Information
         </h2>
 
@@ -44,7 +44,7 @@ const InfoCompanyCoporate = () => {
           </div>
         </div>
 
-        <h3 className="text-[32px] lg:text-[38px] text-[#0A004B]  font-semibold text-left text-[#131313] mb-5 font-['Rajdhani']">
+        <h3 className="text-[32px] lg:text-[38px] text-[#0A004B]  font-semibold text-left  mb-5 font-['Rajdhani']">
         Company Secretary
         </h3>
 
@@ -70,7 +70,7 @@ const InfoCompanyCoporate = () => {
           </div>
         </div>
 
-        <h4 className="text-[32px] lg:text-[38px] text-[#0A004B]  font-semibold text-left text-[#131313] mb-5 font-['Rajdhani']">
+        <h4 className="text-[32px] lg:text-[38px] text-[#0A004B]  font-semibold text-left  mb-5 font-['Rajdhani']">
         Bankers
         </h4>
 
@@ -88,7 +88,7 @@ const InfoCompanyCoporate = () => {
         </div>
 
         
-        <h4 className="text-[29.5px] lg:text-[38px] text-[#0A004B]  font-semibold text-left text-[#131313] mb-5 font-['Rajdhani']">
+        <h4 className="text-[29.5px] lg:text-[38px] text-[#0A004B]  font-semibold text-left  mb-5 font-['Rajdhani']">
         Licensing and Certifications
         </h4>
 
@@ -105,11 +105,11 @@ const InfoCompanyCoporate = () => {
             className="border rounded-lg p-4 shadow text-center hover:shadow-md transition-all cursor-pointer"
             onClick={() => setIndex(i)}
           >
-<img
-  src={cert.src}
-  alt={cert.title}
-  className="mx-auto h-[300px] sm:h-[250px] md:h-[230px] lg:h-[260px] object-contain mb-3 rounded"
-/>
+            <img
+            src={cert.src}
+            alt={cert.title}
+            className="mx-auto h-[300px] sm:h-[250px] md:h-[230px] lg:h-[260px] object-contain mb-3 rounded"
+            />
 
 
             {/* <p className="text-[17px] font-['Rajdhani'] font-medium">{cert.title}</p> */}
