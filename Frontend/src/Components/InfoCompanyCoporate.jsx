@@ -105,11 +105,13 @@ const InfoCompanyCoporate = () => {
             className="border rounded-lg p-4 shadow text-center hover:shadow-md transition-all cursor-pointer"
             onClick={() => setIndex(i)}
           >
-            <img
-              src={cert.src}
-              alt={cert.title}
-              className="mx-auto h-48 object-contain mb-3"
-            />
+<img
+  src={cert.src}
+  alt={cert.title}
+  className="mx-auto h-[300px] sm:h-[250px] md:h-[230px] lg:h-[260px] object-contain mb-3 rounded"
+/>
+
+
             {/* <p className="text-[17px] font-['Rajdhani'] font-medium">{cert.title}</p> */}
           </div>
         ))}
