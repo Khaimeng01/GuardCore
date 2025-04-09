@@ -147,8 +147,8 @@ const InfoCompanyCoporate = () => {
           </h3> */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-12 text-[20px] text-gray-700 font-['Rajdhani']">
             <div>
-            <span className="text-[21px] lg:text-[24px] text-gray-800 font-semibold">Approved Capital:</span>{' '}
-            <span className="text-[19px] lg:text-[24px]  font-semibold text-[#0A004B]">RM2,000,000.00</span>
+                <span className="text-[21px] lg:text-[24px] text-gray-800 font-semibold">Approved Capital:</span>{' '}
+                <span className="text-[19px] lg:text-[24px]  font-semibold text-[#0A004B]">RM2,000,000.00</span>
 
             </div>
             <div>
@@ -196,7 +196,9 @@ const InfoCompanyCoporate = () => {
 
           <div className="text-[20px] text-gray-700 font-['Rajdhani']">
             <p>
-              <span className="font-semibold text-[21px] lg:text-[24px] text-gray-800">Bank:</span> Maybank Berhad
+              {/* <span className="font-semibold text-[21px] lg:text-[24px] text-gray-800">Bank:</span> Maybank Berhad */}
+              <span className="text-[21px] lg:text-[24px] text-gray-800 font-semibold">Bank:</span>{' '}
+            <span className="text-[19px] lg:text-[22px]  ">Maybank Berhad</span>
             </p>
           </div>
         </div>

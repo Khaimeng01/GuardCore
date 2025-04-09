@@ -36,10 +36,10 @@ const AboutIntro = () => {
 
                 {/* Text section */}
                 <div className="w-full lg:w-1/2 flex flex-col gap-5 px-5 md:items-center lg:items-start xl:gap-7">
-                    <h1 className="text-[32px] font-['otomanopee-one'] text-white xl:text-[44px] 2xl:text-[56px]">
-                        Guardcore Security Services
+                    <h1 className="text-[32px] font-['Rajdhani'] text-white xl:text-[44px] 2xl:text-[56px]">
+                    GUARDCORE SECURITY SERVICES
                     </h1>
-                    <p className="text-[#939393] font-['Philosopher'] text-[15px] leading-[17px] xl:leading-6 max-w-[660px] md:text-center lg:text-left xl:text-[16px] 2xl:text-[18px]">
+                    <p className="text-[#939393] font-['Rajdhani']text-[15px] leading-[17px] xl:leading-6 max-w-[660px] md:text-center lg:text-left xl:text-[16px] 2xl:text-[18px]">
                         Empowering Safety, Ensuring Protection. Welcome to GUARDCORE Security Services — your trusted partner in protecting what matters most. As a leading provider of professional security solutions, we are proud of our unwavering commitment to delivering exceptional protection for individuals, businesses, and communities. The name GUARDCORE stands as a testament to the professionalism and dedication of our team. We offer services that are both result-driven and tailored to our clients' unique needs.
                     </p>
                     <button
