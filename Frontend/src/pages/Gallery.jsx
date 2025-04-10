@@ -167,17 +167,17 @@ const Gallery = () => {
         importImages(import.meta.glob('../assets/galleryMain/*.{jpg,jpeg,png}', { eager: true }))
     , []);
 
-  const [guards, setGuards] = useState([]);
-  const [bodyguards, setBodyguards] = useState([]);
-  const [team, setTeam] = useState([]);
-  const [others, setOthers] = useState([]);
+    const [guards, setGuards] = useState([]);
+    const [bodyguards, setBodyguards] = useState([]);
+    const [team, setTeam] = useState([]);
+    const [others, setOthers] = useState([]);
 
   const loadExtraImages = () => {
     if (!hasLoadedExtraImages) {
       setGuards(importImages(import.meta.glob('../assets/galleryGuard/*.{jpg,JPG,jpeg,JPEG,png,PNG}', { eager: true })));
-      setBodyguards(importImages(import.meta.glob('../assets/bodyguards/*.{jpg,JPG,jpeg,JPEG,png,PNG}', { eager: true })));
-      setTeam(importImages(import.meta.glob('../assets/team/*.{jpg,JPG,jpeg,JPEG,png,PNG}', { eager: true })));
-      setOthers(importImages(import.meta.glob('../assets/others/*.{jpg,JPG,jpeg,JPEG,png,PNG}', { eager: true })));
+      setBodyguards(importImages(import.meta.glob('../assets/bodyguards/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp}', { eager: true })));
+      setTeam(importImages(import.meta.glob('../assets/galleryOthers/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp}', { eager: true })));
+      setOthers(importImages(import.meta.glob('../assets/galleryTeam/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp}', { eager: true })));
       setHasLoadedExtraImages(true);
     }
   };

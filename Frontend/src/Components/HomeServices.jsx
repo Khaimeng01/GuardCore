@@ -33,6 +33,8 @@ const HomeServices = () => {
     useEffect(() => {
         aos.init({
             once: "true",
+            offset: 120, // or try 80, this triggers the animation when it's 100px into view
+
         })
     }, [])
 
@@ -45,7 +47,7 @@ const HomeServices = () => {
                 <div className='flex flex-col gap-[100px] items-center md:grid md:grid-rows-3 md:grid-cols-2 md:gap-7 md:gap-y-[80px] xl:grid-cols-3 xl:grid-rows-2 xl:gapx-[80px]'>
                     
                     {/* Service 1 */}
-                    <div className='lg:min-h-[314px]  min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='lg:min-h-[314px]  min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image1} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col items-center gap-4'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px] '>STATIC GUARDS</p>
@@ -62,7 +64,7 @@ const HomeServices = () => {
                     </div>
 
                     {/* Service 2 */}
-                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image2} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col items-center gap-4'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>MANAGEMENT OF SECURITY AND SURVEILLANCE SYSTEMS                            </p>
@@ -78,7 +80,7 @@ const HomeServices = () => {
                     </div>
 
                     {/* Service 3 */}
-                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image3} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col items-center gap-4'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>DESIGN & INSTALLATION OF SURVEILLANCE SYSTEMS                            </p>
@@ -94,7 +96,7 @@ const HomeServices = () => {
                     </div>
 
                     {/* Service 4 */}                   
-                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5  rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5  rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image4} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col items-center gap-4'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>BODYGUARDS & ESCORTS</p>
@@ -110,7 +112,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 5 */} 
-                    <div className='min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image5} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col items-center gap-4'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>SECURITY SURVEYS & RISK ANALYSIS</p>
@@ -126,7 +128,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 6 */} 
-                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image6} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>MOBILE PATROL</p>
@@ -142,7 +144,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 7 */} 
-                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image7} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>GUARD DOGS</p>
@@ -158,7 +160,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 8 */} 
-                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image8} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>CORPORATE & PERSONAL THREAT COVERAGE </p>
@@ -174,7 +176,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 9 */} 
-                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image9} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>EVENT SECURITY MANAGEMENT  </p>
@@ -190,7 +192,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 10 */} 
-                    <div className='min-h-[314px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='min-h-[314px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image10} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>COVERT OR OVERT INVESTIGATIONS  </p>
@@ -206,7 +208,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 11 */} 
-                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image11} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>ARMED GUARDS </p>
@@ -222,7 +224,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 12 */} 
-                    <div className='min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image12} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>EXECUTIVE AND PROPERTY PROTECTION  </p>
@@ -238,7 +240,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 13 */} 
-                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image13} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>THIRD-PARTY LIAISON WITH PUBLIC AGENCIES </p>
@@ -254,7 +256,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 14 */} 
-                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image14} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>MANAGEMENT OF REAL AND POTENTIAL SECURITY THREATS </p>
@@ -270,7 +272,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 15 */} 
-                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image15} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>COMMERCIAL CRIMES INVESTIGATION  </p>
@@ -286,7 +288,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 16 */} 
-                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='lg:min-h-[314px] min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image16} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>LEGAL ACTION / LITIGATION  </p>
@@ -303,7 +305,7 @@ const HomeServices = () => {
 
 
                      {/* Service 17 */} 
-                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image17} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>IN-HOUSE SECURITY MANAGEMENT  </p>
@@ -319,7 +321,7 @@ const HomeServices = () => {
                     </div>
 
                      {/* Service 18*/} 
-                    <div className='lg:min-h-[314px]  min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div className='lg:min-h-[314px]  min-w-[350px] h-auto w-auto bg-white flex flex-col items-center px-2 pb-5 rounded-xl shadow-lg max-w-[460px] xl:px-8 xl:pb-8' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-duration="250">
                         <img src={image18} alt="" className='h-[150px] w-[150px] rounded-full object-cover relative -top-16 border-[10px] border-[#ECECEC] z-10' />
                         <div className='flex flex-col gap-4 items-center'>
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>GATHERING OF EVIDENCE</p>

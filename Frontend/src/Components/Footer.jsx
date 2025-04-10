@@ -16,8 +16,8 @@ const Footer = () => {
     const navigate = useNavigate()
     return (
         <>
-            <div className='xl:flex flex-col mt-20 bg-gradient-to-t xl:bg-gradient-to-r from-[#3E187A] to-[#994ECC] text-white px-1 md:px-3 xl:px-0 pt-6 xl:pt-8 pb-5'>
-                <div className='xl:flex justify-between mx-auto w-full max-w-[600px] xl:max-w-[1350px] px-4 pb-6 xl:pb-0'>
+<div className='xl:flex flex-col mt-20 bg-[#2F313F] text-white px-1 md:px-3 xl:px-0 pt-6 xl:pt-8 pb-5'>
+<div className='xl:flex justify-between mx-auto w-full max-w-[600px] xl:max-w-[1350px] px-4 pb-6 xl:pb-0'>
                     <div className='flex flex-col justify-between space-y-11 xl:space-y-16 h-full'>
                         <div className='flex items-center justify-center xl:justify-normal gap-3'>
                             {/* <img src={logo} alt="logo" className='w-[58px] h-[68px] sm:w-[68px] sm:h-[78px]' /> */}
