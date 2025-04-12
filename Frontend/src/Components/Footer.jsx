@@ -2,6 +2,8 @@ import React from 'react'
 import { useNavigate } from "react-router-dom"
 // import logo from '../assets/logo-white.png'
 import logo from '../assets/logo_guardcore.png';
+import logo2 from '../assets/logo_guardcore.png';
+
 
 import facebook from '../assets/facebook-icon.png'
 import instagram from '../assets/instagram-icon.png'
