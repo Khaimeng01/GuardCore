@@ -53,12 +53,15 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px] '>STATIC GUARDS</p>
 
                             <button
-                                onClick={() => navigate("/services#staticGuards")}
+                                onClick={() => navigate("/services#static-guards")
+                                }
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
                                 <span className="relative z-10 group-hover:text-white">FIND OUT MORE</span>
                             </button>
+
+                            
 
                         </div>
                     </div>
