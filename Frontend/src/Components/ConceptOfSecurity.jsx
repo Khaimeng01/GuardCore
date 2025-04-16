@@ -86,7 +86,9 @@ const ConceptOfSecurity = () => {
         <img
           src={element.image}
           alt={element.title}
-          className="rounded-lg object-cover w-[fit] h-[400px]"
+        //   className="rounded-lg object-cover w-[fit] h-[400px]"
+          className="rounded-lg object-cover w-full lg:w-fit h-auto lg:h-[400px]"
+
         />
       </div>
 
