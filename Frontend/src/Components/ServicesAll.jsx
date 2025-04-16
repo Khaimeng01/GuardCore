@@ -33,33 +33,28 @@ const ServicesAll = () => {
   useEffect(() => {
     if (location.hash) {
       const sectionId = location.hash.replace('#', '');
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
+      let attempts = 0;
+  
+      const tryScroll = () => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const yOffset = -100; // adjust based on navbar height
+          const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          requestAnimationFrame(() => {
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          });
+        } else if (attempts < 10) {
+          attempts++;
+          setTimeout(tryScroll, 100);
+        }
+      };
+  
+      tryScroll();
     }
   }, [location]);
+  
 
-  useEffect(() => {
-  if (location.hash) {
-    const sectionId = location.hash.replace('#', '');
-
-    const scrollToSection = () => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    };
-
-    // Try once immediately
-    scrollToSection();
-
-    // Retry after short delay in case it's not ready yet
-    const timeoutId = setTimeout(scrollToSection, 500);
-
-    return () => clearTimeout(timeoutId);
-  }
-}, [location]);
+  
 
 
   return (
@@ -72,7 +67,7 @@ const ServicesAll = () => {
         <div className="flex flex-col w-full gap-12 xl:hidden px-4 mt-10">
 
           {/* First Service */}
-            <div id="staticGuards" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="serviceMobile1" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
               <div className="w-full">
                 <img src={image1} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
               </div>
@@ -127,7 +122,7 @@ const ServicesAll = () => {
 
 
              {/* 4 Service */}
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="service4" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
               <div className="w-full">
                 <img src={image4} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
               </div>
@@ -143,7 +138,7 @@ const ServicesAll = () => {
             </div>
 
             {/* 5 Service */}
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="service5" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image5} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -160,7 +155,7 @@ const ServicesAll = () => {
 
 
             {/* 6 Service */}
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="service6" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image6} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -176,7 +171,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 7 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service7" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image7} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -193,7 +188,7 @@ const ServicesAll = () => {
 
 
 {/* 8 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service8" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image8} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -210,7 +205,7 @@ const ServicesAll = () => {
 
 
 {/* 9 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service9" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image9} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -226,7 +221,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 10 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service10" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image10} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -242,7 +237,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 11 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service11" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image11} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -258,7 +253,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 12 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service12" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image12} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -274,7 +269,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 13 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service13" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image13} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -290,7 +285,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 14 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service14" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image14} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -306,7 +301,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 15 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service15" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image15} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -322,7 +317,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 16 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service16" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image16} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -338,7 +333,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 17 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service17" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image17} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -354,7 +349,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 18 Service */}
-<div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="service18" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image18} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -392,7 +387,7 @@ const ServicesAll = () => {
             </div>
 
           {/* Second Service */}
-          <div  id="ManagementofSecurityandSurveillanceSystems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+          <div  id="serviceDesktop2" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image2} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -409,7 +404,7 @@ const ServicesAll = () => {
 
 
           {/* Third Service */}
-          <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+          <div id="serviceDesktop3" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image3} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -426,7 +421,7 @@ const ServicesAll = () => {
             </div>
 
                       {/* Fourth Service */}
-          <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+          <div id="serviceDesktop4" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image4} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -443,7 +438,7 @@ const ServicesAll = () => {
             </div>
 
                       {/* 5 Service */}
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+            <div id="serviceDesktop5" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image5} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -459,7 +454,7 @@ const ServicesAll = () => {
             </div>
 
                       {/* 6 Service */}
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+            <div id="serviceDesktop6" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image6} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -477,7 +472,7 @@ const ServicesAll = () => {
 
                       {/* 7 Service */}
 
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+            <div id="serviceDesktop7" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image7} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -495,7 +490,7 @@ const ServicesAll = () => {
 
                                   {/* 8 Service */}
 
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+            <div id="serviceDesktop8" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image8} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -514,7 +509,7 @@ const ServicesAll = () => {
 
                 {/* 9 Service */}
 
-                <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+                <div id="serviceDesktop9" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image9} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -532,7 +527,7 @@ const ServicesAll = () => {
 
                             {/* 10 Service */}
 
-                            <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+                            <div id="serviceDesktop10" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image10} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -550,7 +545,7 @@ const ServicesAll = () => {
 
              {/* 11 Service */}
 
-             <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+             <div id="serviceDesktop11" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image11} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -569,7 +564,7 @@ const ServicesAll = () => {
 
              {/* 12 Service */}
 
-             <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+             <div id="serviceDesktop12" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image12} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -587,7 +582,7 @@ const ServicesAll = () => {
 
             {/* 13 Service */}
 
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+            <div id="serviceDesktop13" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image13} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -605,7 +600,7 @@ const ServicesAll = () => {
 
             {/* 14 Service */}
 
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+            <div id="serviceDesktop14" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image14} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -622,7 +617,7 @@ const ServicesAll = () => {
             </div>
 
                         {/* 15 Service */}
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+            <div id="serviceDesktop15" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image15} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -639,7 +634,7 @@ const ServicesAll = () => {
             </div>
 
             {/* 16 Service */}
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+            <div id="serviceDesktop16" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image16} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -656,7 +651,7 @@ const ServicesAll = () => {
             </div>
 
                         {/* 17 Service */}
-                        <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+                        <div id="serviceDesktop17" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image17} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
@@ -673,7 +668,7 @@ const ServicesAll = () => {
             </div>
 
              {/* 18 Service */}
-             <div id="Design&InstallationofSurveillance Systems" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+             <div id="serviceDesktop18" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
                 <div className="flex-1 flex justify-center">
                   <img src={image18} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
