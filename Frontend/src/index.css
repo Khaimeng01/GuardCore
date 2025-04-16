@@ -30,3 +30,8 @@
 .nav-ul li:hover::after {
     width: 100%;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+}

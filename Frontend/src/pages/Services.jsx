@@ -7,6 +7,9 @@ import ScrollToTop from "../Components/ScrollToTop"
 import ServiceAreas from "../Components/ServiceArea"
 import OurCommitment from "../Components/ServiceComiment"
 import TrainingAndDevelopment from "../Components/ServiceTraining"
+import ConceptOfSecurity from "../Components/ConceptOfSecurity"
+import ServiceCTA from "../Components/ServiceCTA"
+import CustomerRelationshipManagement from "../Components/CustomerRelationshipManagement"
 
 const Services = () => {
     return (
@@ -16,10 +19,20 @@ const Services = () => {
                 <Navbar />
                 
                 <ServicesBanner />
+                
                 <OurCommitment/>
                 <TrainingAndDevelopment/>
+
                 <ServicesAll />
                 <ServiceAreas/>
+
+                <ConceptOfSecurity/>
+
+                <CustomerRelationshipManagement/>
+                <ServiceCTA/>
+
+
+
                 <Footer />
             </body>
         </>

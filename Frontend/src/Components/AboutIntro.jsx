@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import aos from "aos"
 import "aos/dist/aos.css"
+import { HashLink } from 'react-router-hash-link';
 
 import introImage from "../assets/aboutIntro/aboutIntro_1.png"
 
@@ -42,12 +43,19 @@ const AboutIntro = () => {
                     <p className="text-[#939393] font-['Rajdhani']text-[15px] leading-[17px] xl:leading-6 max-w-[660px] md:text-center lg:text-left xl:text-[16px] 2xl:text-[18px]">
                         Empowering Safety, Ensuring Protection. Welcome to GUARDCORE Security Services — your trusted partner in protecting what matters most. As a leading provider of professional security solutions, we are proud of our unwavering commitment to delivering exceptional protection for individuals, businesses, and communities. The name GUARDCORE stands as a testament to the professionalism and dedication of our team. We offer services that are both result-driven and tailored to our clients' unique needs.
                     </p>
-                    <button
+                    {/* <button
                         onClick={() => navigate("/contact")}
                         className="h-12 w-36 bg-[#FF6A00] text-white font-['Montserrat'] text-xs font-bold rounded-[5px] xl:w-[170px] xl:h-[55px] xl:text-base transition-transform transform hover:scale-110 duration-150 ease-in"
                     >
                         CONTACT US
-                    </button>
+                    </button> */}
+                    <HashLink
+  smooth
+  to="/#contact"
+  className="h-12 w-36 bg-[#FF6A00] text-white font-['Montserrat'] text-xs font-bold rounded-[5px] xl:w-[170px] xl:h-[55px] xl:text-base transition-transform transform hover:scale-110 duration-150 ease-in flex items-center justify-center"
+>
+  CONTACT US
+</HashLink>
                 </div>
             </div>
         </div>

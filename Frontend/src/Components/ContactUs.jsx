@@ -21,15 +21,15 @@ const ContactUs = () => {
         console.log('Part 1 ');
 
         emailjs.send(
-            'service_u0mde5r', // Replace with your EmailJS Service ID
-            'template_0f86h9f', // Replace with your EmailJS Template ID
+            'service_7q6tnue', // Replace with your EmailJS Service ID
+            'template_o1tee62', // Replace with your EmailJS Template ID
             {
                 name: data.name, // Form field values
                 email: data.email,
                 subject: data.subject,
                 message: data.message,
             },
-            'wribopA55E2Gz7P2_' // Replace with your EmailJS Public Key
+            'hLgYn1EoyV5Rvz9Y7' // Replace with your EmailJS Public Key
         )
             .then((response) => {
                 console.log('Part 1.1 ');
