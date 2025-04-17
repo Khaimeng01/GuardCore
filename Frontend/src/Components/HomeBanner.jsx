@@ -39,8 +39,8 @@ const HomeBanner = () => {
 
 
             <div className='flex flex-col justify-center w-full h-auto sm:px-8 md:items-center lg:items-start xl:px-0'>
-                <h1 className='font-["Rajdhani"] font-semibold text-[38px] text-[#131313] mb-3 sm:text-[44px] md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] 2xl:text-[72px]'>{banner.title}</h1>
-                <h1 className='font-["Rajdhani"] font-semibold text-[38px] text-[#131313] mb-3 sm:text-[44px] md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] 2xl:text-[72px]'>{banner.subtitle}</h1>
+                <h1 className='font-["Rajdhani"] font-semibold text-[38px] text-[#131313] mb-3 sm:text-[44px] md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] 2xl:text-[65px]'>{banner.title}</h1>
+                <h1 className='font-["Rajdhani"] font-semibold text-[38px] text-[#131313] mb-3 sm:text-[44px] md:text-[56px] md:tracking-wide lg:text-[40px] xl:text-[56px] 2xl:text-[65px]'>{banner.subtitle}</h1>
                 <div className='flex items-center gap-2 mb-5 xl:gap-4'>
                     <div className='w-[47px] h-[2px] bg-black md:w-[56px] xl:w-[78px]'></div>
                     <p className='font-["Rajdhani"] font-semibold text text-[18px] sm:text-[20px] md:text-[22px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px]'>Trusted Security Solutions</p>

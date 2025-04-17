@@ -84,14 +84,14 @@ const HomeAbout = () => {
                 <div className='lg:flex items-center md:min-h-[635px]  space-y-6 lg:gap-14 2xl:gap-28 mx-auto max-w-[400px] md:max-w-[600px] lg:max-w-[1150px] xl:max-w-[1330px] 2xl:max-w-[1365px] pt-16 lg:pt-2 pb-8 lg:pb-0 px-4 xl:px-1'>
                     <div className='lg:hidden'>
                         {/* <h1 className='font-["otomanopee-one"] text-[28px] text-[#131313] pb-3'>WELCOME TO</h1> */}
-                        <h1 className='font-["Rajdhani"] text-4xl lg:text-4xl xl:text-5xl text-[#E0E0E0]'>GUARDCORE SECURITY SERVICES</h1>
+                        <h1 className='font-["Rajdhani"] text-[26px] lg:text-4xl xl:text-[30px] text-[#E0E0E0]'>GUARDCORE SECURITY SERVICES</h1>
 
                     </div>
                     <img src={home_about3} alt="" className='lg:w-[520px] xl:w-[650px]' />
                     <div className='lg:space-y-14' data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="500">
                         <div className='hidden lg:block'>
                             {/* <h1 className='font-["otomanopee-one"] lg:text-4xl xl:text-5xl text-[#131313] pb-6'>WELCOME TO</h1> */}
-                            <h1 className='font-["Rajdhani"] lg:text-5xl xl:text-6xl text-[#E0E0E0]'>GUARDCORE SECURITY SERVICES</h1>
+                            <h1 className='font-["Rajdhani"] lg:text-5xl xl:text-[56px] text-[#E0E0E0]'>GUARDCORE SECURITY SERVICES</h1>
                         </div>
                         <p className='font-["Rajdhani"] text-[#E0E0E0] text-lg xl:text-xl leading-relaxed xl:leading-loose text-justify'>
                         Empowering Safety, Ensuring Protection. Welcome to GUARDCORE Security Services, your trusted partner in safeguarding what matters most. As a premier provider of professional security solutions, we take pride in our unwavering commitment to delivering unparalleled protection for individuals, businesses and communities. We are committed to making the name of GUARDCORE Security Services as a testimony of the total professionalism and dedication of our team. We provide professional and result-oriented services to our clients.

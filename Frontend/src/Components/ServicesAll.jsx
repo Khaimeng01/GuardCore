@@ -67,7 +67,7 @@ const ServicesAll = () => {
         <div className="flex flex-col w-full gap-12 xl:hidden px-4 mt-10">
 
           {/* First Service */}
-            <div id="serviceMobile1" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="staticGuardsMobile" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
               <div className="w-full">
                 <img src={image1} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
               </div>

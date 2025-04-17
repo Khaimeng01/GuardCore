@@ -26,14 +26,19 @@ import image15 from "../assets/homeService/Service_15.png";
 import image16 from "../assets/homeService/Service_16.png";
 import image17 from "../assets/homeService/Service_17.png";
 import image18 from "../assets/homeService/Service_18.png";
+import useIsMobile from './useIsMobile';
 
 
 const HomeServices = () => {
+
+    const isMobile = useIsMobile();
+
+
     const navigate = useNavigate()
     useEffect(() => {
         aos.init({
             once: "true",
-            offset: 120, // or try 80, this triggers the animation when it's 100px into view
+            // offset: 120, // or try 80, this triggers the animation when it's 100px into view
 
         })
     }, [])
@@ -53,32 +58,17 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px] '>STATIC GUARDS</p>
 
                             <button
-                                onClick={() => navigate("/services#staticGuards")
-                                }
+                                // onClick={() => navigate("/services#staticGuards")
+                                // }
+                                onClick={() =>
+                                    navigate(isMobile ? "/services#staticGuardsMobile" : "/services#staticGuards")
+                                  }
+                                  
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
                                 <span className="relative z-10 group-hover:text-white">FIND OUT MORE</span>
                             </button>
-
-{/* <button
-  onClick={() => {
-    navigate("/services#static-guards"); // navigate first
-    setTimeout(() => {
-      const section = document.getElementById("static-guards");
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-    }, 300); // delay to wait for DOM to mount
-  }}
-  className="..."
->
-  <span className="relative z-10 group-hover:text-white">FIND OUT MORE</span>
-</button> */}
-
-
-                            
-
                         </div>
                     </div>
 
@@ -89,7 +79,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>MANAGEMENT OF SECURITY AND SURVEILLANCE SYSTEMS                            </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services#serviceDesktop2")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
