@@ -382,7 +382,7 @@ const ServicesAll = () => {
           
 
                       {/* First Service */}
-          <div  id="serviceDesktop1" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center scroll-mt-28">
+          <div  id="staticGuard" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center scroll-mt-28">
                 <div className="flex-1 flex justify-center">
                   <img src={image1} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
