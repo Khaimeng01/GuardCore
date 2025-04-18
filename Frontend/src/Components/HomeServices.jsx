@@ -27,6 +27,7 @@ import image16 from "../assets/homeService/Service_16.png";
 import image17 from "../assets/homeService/Service_17.png";
 import image18 from "../assets/homeService/Service_18.png";
 import useIsMobile from './useIsMobile';
+import { HashLink } from 'react-router-hash-link';
 
 
 const HomeServices = () => {
@@ -58,8 +59,10 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px] '>STATIC GUARDS</p>
 
                             <button
-                                onClick={() => navigate("/services")
-                                }
+                                
+                                onClick={() => navigate(
+                                    `/services#${isMobile ? 'mobileService1' : 'serviceDesktop1'}`
+                                  )}
                                 // onClick={() =>
                                 //     navigate(isMobile ? "/services#staticGuardsMobile" : "/services#staticGuards")
                                 //   }
@@ -79,7 +82,9 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>MANAGEMENT OF SECURITY AND SURVEILLANCE SYSTEMS                            </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services")}
+                                onClick={() => navigate(
+                                    `/services#${isMobile ? 'mobileService2' : 'serviceDesktop2'}`
+                                  )}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>

@@ -38,15 +38,15 @@ import image19 from "../assets/homeService/Service_19.png";
 
 
 const ServicesAll = () => {
-  // const location = useLocation();
-  // const { hash } = useLocation()
+  const { hash } = useLocation();
 
-  // useEffect(() => {
-  //   if (!hash) return;
-  //   const id = hash.slice(1);
-  //   const el = document.getElementById(id);
-  //   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  // }, [hash]);
+  useEffect(() => {
+    if (!hash) return;
+    const target = document.getElementById(hash.slice(1)); 
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [hash]);
   
   
 
@@ -63,7 +63,7 @@ const ServicesAll = () => {
         <div className="flex flex-col w-full gap-12 xl:hidden px-4 mt-10">
 
           {/* First Service */}
-            <div id="mobileService111" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto scroll-mt-28">
+            <div id="mobileService1" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto scroll-mt-28">
               <div className="w-full">
                 <img src={image1} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
               </div>
@@ -81,7 +81,7 @@ const ServicesAll = () => {
             </div>
 
           {/* Second Service */}
-          <div id="ManagementofSecurityandSurveillanceSystems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+          <div id="mobileService2" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
               <div className="w-full">
                 <img src={image2} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
               </div>
@@ -99,7 +99,7 @@ const ServicesAll = () => {
             </div>
 
           {/* Third Service */}
-            <div id="Design&InstallationofSurveillance Systems" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="mobileService3" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
               <div className="w-full">
                 <img src={image3} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
               </div>
@@ -118,7 +118,7 @@ const ServicesAll = () => {
 
 
              {/* 4 Service */}
-            <div id="service4" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="mobileService4" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
               <div className="w-full">
                 <img src={image4} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
               </div>
@@ -134,7 +134,7 @@ const ServicesAll = () => {
             </div>
 
             {/* 5 Service */}
-            <div id="service5" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="mobileService5" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image5} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -151,7 +151,7 @@ const ServicesAll = () => {
 
 
             {/* 6 Service */}
-            <div id="service6" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="mobileService" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image6} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -167,7 +167,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 7 Service */}
-<div id="service7" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService7" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image7} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -184,7 +184,7 @@ const ServicesAll = () => {
 
 
 {/* 8 Service */}
-<div id="service8" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService8" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image8} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -201,7 +201,7 @@ const ServicesAll = () => {
 
 
 {/* 9 Service */}
-<div id="service9" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService9" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image9} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -217,7 +217,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 10 Service */}
-<div id="service10" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService0" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image10} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -233,7 +233,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 11 Service */}
-<div id="service11" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService11" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image11} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -249,7 +249,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 12 Service */}
-<div id="service12" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService12" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image12} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -265,7 +265,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 13 Service */}
-<div id="service13" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService13" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image13} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -281,7 +281,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 14 Service */}
-<div id="service14" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService14" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image14} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -297,7 +297,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 15 Service */}
-<div id="service15" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService15" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image15} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -313,7 +313,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 16 Service */}
-<div id="service16" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService16" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image16} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -329,7 +329,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 17 Service */}
-<div id="service17" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService17" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image17} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -345,7 +345,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 18 Service */}
-<div id="service18" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService18" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image18} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -361,7 +361,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 19 Service */}
-<div id="service19" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService19" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image19} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -382,7 +382,7 @@ const ServicesAll = () => {
           
 
                       {/* First Service */}
-          <div  id="staticGuards" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center scroll-mt-28">
+          <div  id="serviceDesktop1" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center scroll-mt-28">
                 <div className="flex-1 flex justify-center">
                   <img src={image1} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
