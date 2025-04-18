@@ -10,8 +10,10 @@ import c7 from "../assets/tc7.png"
 
 import c8 from "../assets/homeTrustedClients/Clients_1.png"
 import c9 from "../assets/homeTrustedClients/Clients_2.png"
-import c10 from "../assets/homeTrustedClients/Clients_3.png"
-import c11 from "../assets/homeTrustedClients/Clients_4.png"
+
+import c10 from "../assets/homeTrustedClients/new_petronas.png"
+import c11 from "../assets/homeTrustedClients/new_Shell.png"
+
 import c12 from "../assets/homeTrustedClients/Clients_5.png"
 import c13 from "../assets/homeTrustedClients/Clients_6.png"
 import c14 from "../assets/homeTrustedClients/Clients_7.png"
@@ -32,7 +34,7 @@ const TrustedClients = () => {
                     <div className="bg-blue-400 h-1 w-16 rounded"></div>
                 </div> */}
 
-<h1 className=" text-gray-900 text-[38px] font-semibold text-center font-['Rajdhani']">
+    <h1 className=" text-gray-900 text-[38px] font-semibold text-center font-['Rajdhani']">
 
                  Our Clients
             </h1>

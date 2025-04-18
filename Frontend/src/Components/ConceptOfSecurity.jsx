@@ -1,9 +1,11 @@
 import React from 'react';
-import trainingImage from "../assets/serviceConceptOfSecurity/image_1.png";
+import trainingImage from "../assets/serviceConceptOfSecurity/new_1.png";
 import mainImage from "../assets/serviceConceptOfSecurity/main_Image.png";
-import communication from "../assets/serviceConceptOfSecurity/communication.png";
+import communication from "../assets/serviceConceptOfSecurity/new_2.png";
+import emergency2 from "../assets/serviceConceptOfSecurity/new_3.png";
+import droneDog from "../assets/serviceConceptOfSecurity/new_4.png";
 import emergency from "../assets/serviceConceptOfSecurity/emergency.png";
-import droneDog from "../assets/serviceConceptOfSecurity/droneDog.png";
+
 
 
 
@@ -25,7 +27,7 @@ const keyElements = [
     title: 'Discipline and Code of Conduct',
     description:
       'Punctuality, integrity, and loyalty are not just expected — they are monitored and reinforced regularly. Officers are held to high ethical standards and operate under a strict duty code.',
-    image: '/assets/serviceConceptOfSecurity/image_11.png',
+      image: emergency2,
   },
   {
     title: 'Technical Readiness',

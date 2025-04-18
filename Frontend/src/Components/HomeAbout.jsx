@@ -10,7 +10,7 @@ import Trusted_Clients from "../assets/trust.png";
 import Various_Services from "../assets/customer-service.png";
 import home_about from "../assets/home_about.png";
 import home_about2 from "../assets/homeAboutUs/Image_3.png";
-import  home_about3 from "../assets/homeBanner/Image_5.png";
+import  home_about3 from "../assets/homeBanner/Image_6.png";
 
 
 const HomeAbout = () => {
@@ -91,7 +91,7 @@ const HomeAbout = () => {
                     <div className='lg:space-y-14' data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine" data-aos-duration="500">
                         <div className='hidden lg:block'>
                             {/* <h1 className='font-["otomanopee-one"] lg:text-4xl xl:text-5xl text-[#131313] pb-6'>WELCOME TO</h1> */}
-                            <h1 className='font-["Rajdhani"] lg:text-5xl xl:text-[56px] text-[#E0E0E0]'>GUARDCORE SECURITY SERVICES</h1>
+                            <h1 className='font-["Rajdhani"] lg:text-5xl xl:text-[45px] text-[#E0E0E0]'>GUARDCORE SECURITY SERVICES</h1>
                         </div>
                         <p className='font-["Rajdhani"] text-[#E0E0E0] text-lg xl:text-xl leading-relaxed xl:leading-loose text-justify'>
                         Empowering Safety, Ensuring Protection. Welcome to GUARDCORE Security Services, your trusted partner in safeguarding what matters most. As a premier provider of professional security solutions, we take pride in our unwavering commitment to delivering unparalleled protection for individuals, businesses and communities. We are committed to making the name of GUARDCORE Security Services as a testimony of the total professionalism and dedication of our team. We provide professional and result-oriented services to our clients.

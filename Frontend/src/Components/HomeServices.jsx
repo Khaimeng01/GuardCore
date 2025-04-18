@@ -58,11 +58,11 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px] '>STATIC GUARDS</p>
 
                             <button
-                                // onClick={() => navigate("/services#staticGuards")
-                                // }
-                                onClick={() =>
-                                    navigate(isMobile ? "/services#staticGuardsMobile" : "/services#staticGuards")
-                                  }
+                                onClick={() => navigate("/services")
+                                }
+                                // onClick={() =>
+                                //     navigate(isMobile ? "/services#staticGuardsMobile" : "/services#staticGuards")
+                                //   }
                                   
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
@@ -79,7 +79,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>MANAGEMENT OF SECURITY AND SURVEILLANCE SYSTEMS                            </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#serviceDesktop2")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -95,7 +95,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>DESIGN & INSTALLATION OF SURVEILLANCE SYSTEMS                            </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -111,7 +111,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>BODYGUARDS & ESCORTS</p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -127,7 +127,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>SECURITY SURVEYS & RISK ANALYSIS</p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -143,7 +143,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>MOBILE PATROL</p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -159,7 +159,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>GUARD DOGS</p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -175,7 +175,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>CORPORATE & PERSONAL THREAT COVERAGE </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -191,7 +191,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>EVENT SECURITY MANAGEMENT  </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -207,7 +207,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>COVERT OR OVERT INVESTIGATIONS  </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -223,7 +223,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>ARMED GUARDS </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -239,7 +239,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>EXECUTIVE AND PROPERTY PROTECTION  </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -255,7 +255,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>THIRD-PARTY LIAISON WITH PUBLIC AGENCIES </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -271,7 +271,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>MANAGEMENT OF REAL AND POTENTIAL SECURITY THREATS </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -287,7 +287,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>COMMERCIAL CRIMES INVESTIGATION  </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -303,7 +303,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>LEGAL ACTION / LITIGATION  </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -320,7 +320,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center'>IN-HOUSE SECURITY MANAGEMENT  </p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
@@ -336,7 +336,7 @@ const HomeServices = () => {
                             <p className='text-3xl 2xl:text-3xl font-["Rajdhani"] font-semibold text-center lg:min-h-[64px]'>GATHERING OF EVIDENCE</p>
                             {/* <p className='text-sm font-["Red_Hat_Display"] text-[#131313] text-center '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quo adipisci et ut exercitationem eaque enim, neque atque ab ducimus.</p> */}
                             <button
-                                onClick={() => navigate("/services#securityGuards")}
+                                onClick={() => navigate("/services")}
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
                                 >
                                 <span className="absolute inset-0 bg-[#FF6A00] transform translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>

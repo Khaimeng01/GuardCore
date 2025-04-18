@@ -6,52 +6,48 @@ import services3 from "../assets/services3.png";
 import services4 from "../assets/services4.png";
 import services6 from "../assets/services6.png";
 
-import image1 from "../assets/homeService/Service_1.png";
+import image1 from "../assets/homeService/newImage1.png";
 import image2 from "../assets/homeService/Service_2.png";
 import image3 from "../assets/homeService/Service_3.png";
-import image4 from "../assets/homeService/Service_4.png";
+import image4 from "../assets/homeService/newImage4.png";
 
 import image5 from "../assets/homeService/Service_5.png";
 import image6 from "../assets/homeService/Service_6.png";
-import image7 from "../assets/homeService/Service_7.png";
+
+import image7 from "../assets/homeService/newImage7.png";
+
 import image8 from "../assets/homeService/Service_8.png";
 import image9 from "../assets/homeService/Service_9.png";
 import image10 from "../assets/homeService/Service_10.png";
-import image11 from "../assets/homeService/Service_11.png";
+
+import image11 from "../assets/homeService/newImage11.png";
+
 import image12 from "../assets/homeService/Service_12.png";
-import image13 from "../assets/homeService/Service_13.png";
+
+import image13 from "../assets/homeService/newImage13.png";
+
 import image14 from "../assets/homeService/Service_14.png";
 import image15 from "../assets/homeService/Service_15.png";
 import image16 from "../assets/homeService/Service_16.png";
-import image17 from "../assets/homeService/Service_17.png";
+
+import image17 from "../assets/homeService/newImage17.png";
+
 import image18 from "../assets/homeService/Service_18.png";
+import image19 from "../assets/homeService/Service_19.png";
+
 
 
 const ServicesAll = () => {
-  const location = useLocation();
+  // const location = useLocation();
+  // const { hash } = useLocation()
 
-  useEffect(() => {
-    if (location.hash) {
-      const sectionId = location.hash.replace('#', '');
-      let attempts = 0;
+  // useEffect(() => {
+  //   if (!hash) return;
+  //   const id = hash.slice(1);
+  //   const el = document.getElementById(id);
+  //   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // }, [hash]);
   
-      const tryScroll = () => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          const yOffset = -100; // adjust based on navbar height
-          const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          requestAnimationFrame(() => {
-            window.scrollTo({ top: y, behavior: 'smooth' });
-          });
-        } else if (attempts < 10) {
-          attempts++;
-          setTimeout(tryScroll, 100);
-        }
-      };
-  
-      tryScroll();
-    }
-  }, [location]);
   
 
   
@@ -67,13 +63,13 @@ const ServicesAll = () => {
         <div className="flex flex-col w-full gap-12 xl:hidden px-4 mt-10">
 
           {/* First Service */}
-            <div id="staticGuardsMobile" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="mobileService111" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto scroll-mt-28">
               <div className="w-full">
                 <img src={image1} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
               </div>
               <div className="flex flex-col items-center gap-2">
                 <h1 className="text-[22px] text-[#131313] font-['Rajdhani'] font-semibold text-center leading-tight">
-                Security Guards
+                Static Guards
                 </h1>
                 {/* <p className="text-[18px] font-['Rajdhani'] font-medium text-center">CHAIRMAN</p> */}
                 <div className="h-[3px] w-[40px] bg-yellow-400 rounded-sm my-1"></div>
@@ -364,25 +360,41 @@ const ServicesAll = () => {
   </div>
 </div>
 
+{/* 19 Service */}
+<div id="service19" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+  <div className="w-full">
+    <img src={image19} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
+  </div>
+  <div className="flex flex-col items-center gap-2">
+    <h1 className="text-[22px] text-[#131313] font-['Rajdhani'] font-semibold text-center leading-tight text-uppercase">
+    Specialized Security Services
+    </h1>
+    <div className="h-[3px] w-[40px] bg-yellow-400 rounded-sm my-1"></div>
+    <p className="text-sm font-['Rajdhani'] text-center text-justify text-[#333] leading-relaxed">
+    Guardcore offers advanced protection through a select group of specialized officers trained for high-risk environments and investigative tasks. Our unarmed guards maintain secure, customer-facing environments. Armed guards are equipped for high-value, high-security sites. Meanwhile, our investigation unit delivers discreet, results-driven intelligence for sensitive corporate or private cases.    </p>
+  </div>
+</div>
+
 
         </div>
 
         <div className="hidden xl:flex flex-col items-center w-full gap-16 mt-20">
           
-          {/* First Service */}
-          <div id="staticGuards" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+
+                      {/* First Service */}
+          <div  id="staticGuards" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center scroll-mt-28">
                 <div className="flex-1 flex justify-center">
-                  <img src={image1} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[300px] h-[400px]" />
+                  <img src={image1} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
                 </div>
                 <div className="flex flex-col gap-4 flex-1">
-                  <h1 className="text-[32px] text-[#131313] font-['Rajdhani'] font-bold leading-tight">
-                  Security Guards
+                  <h1 className="text-[32px] text-[#131313] font-['Rajdhani'] font-bold leading-tight text-uppercase">
+                  Static Guards
                   </h1>
                   {/* <h2 className="text-[20px] text-[#1c1c1c] font-semibold font-['Rajdhani']">CHAIRMAN</h2> */}
                   <div className="h-[3px] w-[50px] bg-yellow-400 rounded-sm my-1"></div>
                   <p className="text-md font-['Rajdhani'] text-[#333] leading-relaxed max-w-[600px] text-justify">
                   Our trained and licensed static guards provide a constant, visible security presence to deter unauthorized access and ensure the safety of your premises. Whether stationed at entrances, reception areas, or strategic internal points, our guards are skilled in monitoring access, conducting routine patrols, and responding to incidents swiftly. Ideal for commercial buildings, residential complexes, construction sites, and retail outlets, static guards are a frontline defense that offer both a security presence and peace of mind          
-                  </p>
+                   </p>
                 </div>
             </div>
 
@@ -681,6 +693,23 @@ const ServicesAll = () => {
                   <div className="h-[3px] w-[50px] bg-yellow-400 rounded-sm my-1"></div>
                   <p className="text-md font-['Rajdhani'] text-[#333] leading-relaxed max-w-[600px] text-justify">
                   We assist in the collection of reliable and relevant information to support decision-making, investigations, or legal processes. Using a variety of methods—such as observation, interviews, and documentation—we gather evidence in a professional and confidential manner. Our goal is to provide clear, factual insights that can be used to understand situations better, resolve disputes, or take further action when necessary.                  </p>         
+                  </div>
+            </div>
+
+            {/* 19 Service */}
+            <div id="serviceDesktop19" className="flex flex-row bg-white rounded-xl shadow-lg p-8 max-w-[1200px] w-full gap-12 items-center">
+                <div className="flex-1 flex justify-center">
+                  <img src={image19} alt="Maj Gen (R) Dato Zainal" className="rounded-lg object-cover w-[fit] h-[400px]" />
+                </div>
+                <div className="flex flex-col gap-4 flex-1">
+                  <h1 className="text-[32px] text-[#131313] font-['Rajdhani'] font-bold leading-tight text-uppercase">
+                    {/* Security Surveys & Risk Analysis */}
+                    Specialized Security Services
+                    </h1>
+                  {/* <h2 className="text-[20px] text-[#1c1c1c] font-semibold font-['Rajdhani']">CHAIRMAN</h2> */}
+                  <div className="h-[3px] w-[50px] bg-yellow-400 rounded-sm my-1"></div>
+                  <p className="text-md font-['Rajdhani'] text-[#333] leading-relaxed max-w-[600px] text-justify">
+                  Guardcore offers advanced protection through a select group of specialized officers trained for high-risk environments and investigative tasks. Our unarmed guards maintain secure, customer-facing environments. Armed guards are equipped for high-value, high-security sites. Meanwhile, our investigation unit delivers discreet, results-driven intelligence for sensitive corporate or private cases.                  </p>         
                   </div>
             </div>
 
