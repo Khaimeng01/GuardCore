@@ -42,11 +42,26 @@ const ServicesAll = () => {
 
   useEffect(() => {
     if (!hash) return;
-    const target = document.getElementById(hash.slice(1)); 
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    const id = hash.slice(1);
+    const target = document.getElementById(id);
+    if (!target) return;
+
+    // find your nav height (adjust selector if your header isn’t <header>)
+    const header = document.querySelector('header');
+    const headerHeight = header
+      ? header.getBoundingClientRect().height
+      : 0;
+
+    // compute absolute y of the element…
+    const elementY =
+      target.getBoundingClientRect().top + window.pageYOffset;
+    // …then scroll so that it's just below the header
+    window.scrollTo({
+      top: elementY - headerHeight - 16,  // 16px extra breathing room
+      behavior: 'smooth',
+    });
   }, [hash]);
+  
   
   
 
