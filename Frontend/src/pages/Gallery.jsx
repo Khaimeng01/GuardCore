@@ -34,6 +34,9 @@ const Gallery = () => {
     }
   };
 
+  console.log('Guards:', importImages(import.meta.glob('../assets/galleryCategory1/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp}', { eager: true })));
+
+
   useEffect(() => {
     loadExtraImages();
   }, []);
