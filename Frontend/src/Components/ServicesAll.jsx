@@ -43,7 +43,7 @@ const ServicesAll = () => {
   useEffect(() => {
     console.log('useEffect fired, hash =', hash);
     if (!hash) {
-      console.log('No hash – skipping scroll');
+      console.log('No hash → skipping scroll.');
       return;
     }
 
@@ -54,35 +54,41 @@ const ServicesAll = () => {
       console.warn(`No element found for id "${id}"`);
       return;
     }
-    console.log('Found target:', target);
+    console.log('Found target element:', target);
 
-    // Schedule the scroll after layout+paint+tiny delay
+    // 1️⃣ Wait until after React DOM updates…
     window.requestAnimationFrame(() => {
-      console.log('Inside first rAF, scheduling setTimeout...');
+      console.log('Inside first rAF, scheduling 500ms delay…');
+
+      // 2️⃣ Then wait a bit for images / CSS / animations to finish
       setTimeout(() => {
         console.log('Inside setTimeout – measuring & scrolling now');
 
-        // measure navbar
+        // measure your real navbar height
         const header = document.getElementById('site-header');
+        console.log('Header element:', header);
         const headerHeight = header
           ? header.getBoundingClientRect().height
           : 0;
-        console.log('Measured headerHeight =', headerHeight);
+        console.log('Computed headerHeight =', headerHeight);
 
-        // measure target
+        // re‑measure the target’s position
         const rect = target.getBoundingClientRect();
         const elementY = rect.top + window.pageYOffset;
-        console.log('Measured elementY =', elementY);
+        console.log('Target.getBoundingClientRect() =', rect);
+        console.log('Computed elementY =', elementY);
 
-        // do the smooth scroll
+        // scroll it into place
         window.scrollTo({
           top: elementY - headerHeight,
           behavior: 'smooth',
         });
         console.log(
-          `Scrolled to "${id}" at ${elementY - headerHeight}px`
+          `Scrolled to "${id}" → final scrollTop = ${
+            elementY - headerHeight
+          }`
         );
-      }, 100); // <— tweak this delay if you still see inconsistencies
+      }, 500); // ← you can increase/decrease this delay
     });
   }, [hash]);
   
