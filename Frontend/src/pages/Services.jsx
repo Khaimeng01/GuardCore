@@ -13,58 +13,58 @@ import CustomerRelationshipManagement from "../Components/CustomerRelationshipMa
 import { useLocation } from 'react-router-dom';
 
 
-const Services = () => {
-    return (
-        <>
-            <body className="bg-[#ECECEC]">
-                {/* <ScrollToTop /> */}
-                <Navbar />
-                
-                <ServicesBanner />
-                
-                <OurCommitment/>
-
-                <TrainingAndDevelopment/>
-
-                <CustomerRelationshipManagement/>
-
-
-                <ServicesAll />
-                <ServiceAreas/>
-
-                <ConceptOfSecurity/>
-
-                <ServiceCTA/>
-
-
-
-                <Footer />
-            </body>
-        </>
-    )
-}
 // const Services = () => {
-//     const { hash } = useLocation(); // ✅ Access the current URL hash
-
 //     return (
 //         <>
 //             <body className="bg-[#ECECEC]">
-//                 {/* ✅ Only render ScrollToTop if there's no hash */}
-//                 {!hash && <ScrollToTop />}
-
+//                 {/* <ScrollToTop /> */}
 //                 <Navbar />
+                
 //                 <ServicesBanner />
-//                 <OurCommitment />
-//                 <TrainingAndDevelopment />
+                
+//                 <OurCommitment/>
+
+//                 <TrainingAndDevelopment/>
+
+//                 <CustomerRelationshipManagement/>
+
+
 //                 <ServicesAll />
-//                 <ServiceAreas />
-//                 <ConceptOfSecurity />
-//                 <CustomerRelationshipManagement />
-//                 <ServiceCTA />
+//                 <ServiceAreas/>
+
+//                 <ConceptOfSecurity/>
+
+//                 <ServiceCTA/>
+
+
+
 //                 <Footer />
 //             </body>
 //         </>
-//     );
-// };
+//     )
+// }
+const Services = () => {
+    const { hash } = useLocation(); // ✅ Access the current URL hash
+
+    return (
+        <>
+            <body className="bg-[#ECECEC]">
+                {/* ✅ Only render ScrollToTop if there's no hash */}
+                {!hash && <ScrollToTop />}
+
+                <Navbar />
+                <ServicesBanner />
+                <OurCommitment />
+                <TrainingAndDevelopment />
+                <ServicesAll />
+                <ServiceAreas />
+                <ConceptOfSecurity />
+                <CustomerRelationshipManagement />
+                <ServiceCTA />
+                <Footer />
+            </body>
+        </>
+    );
+};
 
 export default Services
