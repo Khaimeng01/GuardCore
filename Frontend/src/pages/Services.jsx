@@ -17,20 +17,23 @@ const Services = () => {
     return (
         <>
             <body className="bg-[#ECECEC]">
-                <ScrollToTop />
+                {/* <ScrollToTop /> */}
                 <Navbar />
                 
                 <ServicesBanner />
                 
                 <OurCommitment/>
+
                 <TrainingAndDevelopment/>
+
+                <CustomerRelationshipManagement/>
+
 
                 <ServicesAll />
                 <ServiceAreas/>
 
                 <ConceptOfSecurity/>
 
-                <CustomerRelationshipManagement/>
                 <ServiceCTA/>
 
 

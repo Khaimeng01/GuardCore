@@ -41,24 +41,48 @@ const ServicesAll = () => {
   const { hash } = useLocation();
 
   useEffect(() => {
-    if (!hash) return;
+    console.log('useEffect fired, hash =', hash);
+    if (!hash) {
+      console.log('No hash – skipping scroll');
+      return;
+    }
+
     const id = hash.slice(1);
+    console.log('Looking for element with id:', id);
     const target = document.getElementById(id);
-    if (!target) return;
+    if (!target) {
+      console.warn(`No element found for id "${id}"`);
+      return;
+    }
+    console.log('Found target:', target);
 
-    // find your nav height (adjust selector if your header isn’t <header>)
-    const header = document.querySelector('header');
-    const headerHeight = header
-      ? header.getBoundingClientRect().height
-      : 0;
+    // Schedule the scroll after layout+paint+tiny delay
+    window.requestAnimationFrame(() => {
+      console.log('Inside first rAF, scheduling setTimeout...');
+      setTimeout(() => {
+        console.log('Inside setTimeout – measuring & scrolling now');
 
-    // compute absolute y of the element…
-    const elementY =
-      target.getBoundingClientRect().top + window.pageYOffset;
-    // …then scroll so that it's just below the header
-    window.scrollTo({
-      top: elementY - headerHeight - 16,  // 16px extra breathing room
-      behavior: 'smooth',
+        // measure navbar
+        const header = document.getElementById('site-header');
+        const headerHeight = header
+          ? header.getBoundingClientRect().height
+          : 0;
+        console.log('Measured headerHeight =', headerHeight);
+
+        // measure target
+        const rect = target.getBoundingClientRect();
+        const elementY = rect.top + window.pageYOffset;
+        console.log('Measured elementY =', elementY);
+
+        // do the smooth scroll
+        window.scrollTo({
+          top: elementY - headerHeight,
+          behavior: 'smooth',
+        });
+        console.log(
+          `Scrolled to "${id}" at ${elementY - headerHeight}px`
+        );
+      }, 100); // <— tweak this delay if you still see inconsistencies
     });
   }, [hash]);
   

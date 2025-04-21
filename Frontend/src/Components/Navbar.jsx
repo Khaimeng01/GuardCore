@@ -26,6 +26,7 @@ const Navbar = () => {
 
             {/* Navbar */}
             {/* FOR MOBILE, TABLET AND SMALL LAPTOPS */}
+            <header id="site-header" className="sticky top-0 z-50">
             <div className='sticky top-0 flex justify-between items-center px-5 py-1 lg:hidden z-50 bg-[#ECECEC]/35 backdrop-blur-lg'>
                 <div className='logo flex items-center space-x-2'>
                     {/* <img src={logo} alt="logo" className='w-[47px] h-[55px]' onClick={() => navigate('/')} /> */}
@@ -110,6 +111,8 @@ const Navbar = () => {
 
                 </div>
             </div>
+            </header>
+
         </>
     )
 }
