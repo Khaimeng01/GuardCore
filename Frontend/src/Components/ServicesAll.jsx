@@ -196,7 +196,7 @@ const ServicesAll = () => {
 
 
             {/* 6 Service */}
-            <div id="mobileService" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+            <div id="mobileService6" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image6} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
@@ -262,7 +262,7 @@ const ServicesAll = () => {
 </div>
 
 {/* 10 Service */}
-<div id="mobileService0" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
+<div id="mobileService10" className="flex flex-col gap-4 bg-white shadow-sm rounded-xl p-6 max-w-[400px] mx-auto">
   <div className="w-full">
     <img src={image10} alt="Maj Gen (R) Dato Zainal" className="rounded-lg w-full h-auto max-h-[350px] object-contain" />
   </div>
