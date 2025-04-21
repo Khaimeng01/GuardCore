@@ -64,7 +64,7 @@ const HomeServices = () => {
                                 //     `/services#staticGuard`
                                 //   )}
                                 onClick={() =>
-                                    navigate(isMobile ? "/services#staticGuardsMobile" : "/services#staticGuard")
+                                    navigate(isMobile ? "/services#mobileService1" : "/services#staticGuard")
                                   }
                                   
                                 className="text-sm font-bold font-['Montserrat'] text-white bg-gradient-to-r from-[#FF6A00] to-[#FF9F40] px-5 py-4 relative overflow-hidden group"
