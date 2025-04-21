@@ -56,10 +56,10 @@ const Services = () => {
                 <ServicesBanner />
                 <OurCommitment />
                 <TrainingAndDevelopment />
+                <CustomerRelationshipManagement />
                 <ServicesAll />
                 <ServiceAreas />
                 <ConceptOfSecurity />
-                <CustomerRelationshipManagement />
                 <ServiceCTA />
                 <Footer />
             </body>
