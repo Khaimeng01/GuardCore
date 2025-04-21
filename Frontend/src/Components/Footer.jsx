@@ -13,11 +13,14 @@ import location from '../assets/location.png'
 import phone_call from '../assets/phone_call.png'
 import mail from '../assets/mail.png'
 import { HashLink } from 'react-router-hash-link';
+import useIsMobile from './useIsMobile';
 
 
 
 const Footer = () => {
     const navigate = useNavigate()
+    const isMobile = useIsMobile();
+
     return (
         <>
 <div className='xl:flex flex-col mt-20 bg-[#2F313F] text-white px-1 md:px-3 xl:px-0 pt-6 xl:pt-8 pb-5'>
@@ -75,27 +78,43 @@ const Footer = () => {
                     <div className='pt-10 space-y-5 hidden xl:block'>
                         <h1 className='font-["Rajdhani"] font-semibold text-xl'>SERVICES</h1>
                         <div className='font-["Rajdhani"] space-y-2 text-[15px]'>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p  onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService1" : "/services#staticGuard")
+                                  } className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Static Guards
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService2" : "/services#desktopService2")
+                                  } className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Management of Security and Surveillance Systems
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService3" : "/services#desktopService3")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Design & Installation of Surveillance Systems
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService4" : "/services#desktopService4")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Bodyguards & Escorts
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService5" : "/services#desktopService5")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Security Surveys & Risk Analysis
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService6" : "/services#desktopService6")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Mobile Patrol
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out '>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService7" : "/services#desktopService7")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out '>
     View All Services 
   </p>
+
+  
 </div>
 
                     </div>
@@ -121,26 +140,40 @@ const Footer = () => {
                         <div className='pt-[10px] space-y-5'>
                             <h1 className='font-["Rajdhani"] font-semibold text-xl'>SERVICES</h1>
                             <div className='font-["Rajdhani"] space-y-2 text-sm md:text-[15px]'>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p  onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService1" : "/services#staticGuard")
+                                  } className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   Static Guards
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService2" : "/services#desktopService2")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   Management of Security<br></br> and Surveillance Systems
 
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService3" : "/services#desktopService3")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   Design & Installation <br></br>of Surveillance Systems
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService4" : "/services#desktopService4")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   Bodyguards & Escorts
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService5" : "/services#desktopService5")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   Security Surveys & Risk Analysis
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService6" : "/services#desktopService6")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   Mobile Patrol
   </p>
-  <p onClick={() => navigate("/services")} className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
+  <p onClick={() =>
+                                    navigate(isMobile ? "/services#mobileService7" : "/services#desktopService7")
+                                  }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   View All Services 
   </p>
 </div>
