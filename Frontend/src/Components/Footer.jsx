@@ -109,7 +109,7 @@ const Footer = () => {
     Mobile Patrol
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService7" : "/services#desktopService7")
+                                    navigate(isMobile ? "/services" : "/services#desktopService7")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out '>
     View All Services 
   </p>
@@ -172,7 +172,7 @@ const Footer = () => {
   Mobile Patrol
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService7" : "/services#desktopService7")
+                                    navigate(isMobile ? "/services" : "/services#desktopService7")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   View All Services 
   </p>
