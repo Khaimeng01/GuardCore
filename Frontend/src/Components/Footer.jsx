@@ -84,32 +84,32 @@ const Footer = () => {
     Static Guards
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService2" : "/services#desktopService2")
+                                    navigate(isMobile ? "/services#mobileService2" : "/services#serviceDesktop2")
                                   } className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Management of Security and Surveillance Systems
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService3" : "/services#desktopService3")
+                                    navigate(isMobile ? "/services#mobileService3" : "/services#serviceDesktop3")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Design & Installation of Surveillance Systems
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService4" : "/services#desktopService4")
+                                    navigate(isMobile ? "/services#mobileService4" : "/services#serviceDesktop4")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Bodyguards & Escorts
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService5" : "/services#desktopService5")
+                                    navigate(isMobile ? "/services#mobileService5" : "/services#serviceDesktop5")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Security Surveys & Risk Analysis
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService6" : "/services#desktopService6")
+                                    navigate(isMobile ? "/services#mobileService6" : "/services#serviceDesktop6")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
     Mobile Patrol
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services" : "/services#desktopService7")
+                                    navigate(isMobile ? "/services" : "/services")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out '>
     View All Services 
   </p>
@@ -146,33 +146,33 @@ const Footer = () => {
   Static Guards
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService2" : "/services#desktopService2")
+                                    navigate(isMobile ? "/services#mobileService2" : "/services#serviceDesktop2")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   Management of Security<br></br> and Surveillance Systems
 
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService3" : "/services#desktopService3")
+                                    navigate(isMobile ? "/services#mobileService3" : "/services#serviceDesktop3")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
-  Design & Installation <br></br>of Surveillance Systems
+                        Design & Installation <br></br>of Surveillance Systems
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService4" : "/services#desktopService4")
+                                    navigate(isMobile ? "/services#mobileService4" : "/services#serviceDesktop4")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   Bodyguards & Escorts
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService5" : "/services#desktopService5")
+                                    navigate(isMobile ? "/services#mobileService5" : "/services#serviceDesktop5")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   Security Surveys & Risk Analysis
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services#mobileService6" : "/services#desktopService6")
+                                    navigate(isMobile ? "/services#mobileService6" : "/services#serviceDesktop6")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   Mobile Patrol
   </p>
   <p onClick={() =>
-                                    navigate(isMobile ? "/services" : "/services#desktopService7")
+                                    navigate(isMobile ? "/services" : "/services")
                                   }  className='hover:translate-x-3  cursor-pointer transition-all duration-200 ease-in-out'>
   View All Services 
   </p>
