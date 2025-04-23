@@ -23,7 +23,7 @@ const AboutMission = () => {
                     <h1 className="text-[32px] xl:text-[48px] 2xl:text-[64px] font-['Rajdhani'] font-bold text-[#131313] tracking-wide">
                         OUR MISSION
                     </h1>
-                    <p className="text-[18px] sm:text-[20px] xl:text-[22px] 2xl:text-[24px] font-['Rajdhani'] text-[#212121] leading-relaxed max-w-[800px]">
+                    <p className="text-[18px] sm:text-[20px] xl:text-[22px] 2xl:text-[24px] font-['Rajdhani'] text-[#212121] leading-relaxed max-w-[800px] text-justify">
                         At <span className="font-semibold">GUARDCORE Security Services</span>, our mission is clear: to create a safer and more secure environment for our clients. We understand the importance of peace of mind, and our dedicated team of highly trained security professionals is ready to stand guard, ensuring your safety and the security of your assets.
                     </p>
                 </div>
@@ -40,7 +40,7 @@ const AboutMission = () => {
                     <h1 className="text-[32px] xl:text-[48px] 2xl:text-[64px] font-['Rajdhani'] font-bold text-[#131313] tracking-wide">
                         OUR VISION
                     </h1>
-                    <p className="text-[18px] sm:text-[20px] xl:text-[22px] 2xl:text-[24px] font-['Rajdhani'] text-[#212121] leading-relaxed max-w-[800px]">
+                    <p className="text-[18px] sm:text-[20px] xl:text-[22px] 2xl:text-[24px] font-['Rajdhani'] text-[#212121] leading-relaxed max-w-[800px] text-justify">
                         Our vision is to be a premier provider of innovative and reliable security solutions, setting the industry standard for excellence. We strive to create a safer world by delivering incomparable protection, fostering trust and empowering our dedicated team to exceed expectations.
                     </p>
                 </div>

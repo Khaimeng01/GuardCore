@@ -47,7 +47,7 @@ const HomeBanner = () => {
                     <div className='w-[47px] h-[2px] bg-black md:w-[56px] xl:w-[78px]'></div>
                     <p className='font-["Rajdhani"] font-semibold text text-[18px] sm:text-[20px] md:text-[22px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px]'>Trusted Security Solutions</p>
                 </div>
-                <p className='font-["Rajdhani"] text-[#3F3F3F] text-md font-medium mb-4 sm:text-[18px] sm:leading-6 md:text-center md:max-w-[670px] lg:text-base lg:text-start xl:text-[18px] xl:max-w-[570px] xl:mb-11'>
+                <p className='font-["Rajdhani"] text-[#3F3F3F] text-md font-medium mb-4 sm:text-[18px] sm:leading-6  md:max-w-[670px] lg:text-base text-justify xl:text-[18px] xl:max-w-[570px] xl:mb-11'>
                     {banner.description}
                 </p>
                 <div className='flex flex-row gap-3 md:gap-6'>
