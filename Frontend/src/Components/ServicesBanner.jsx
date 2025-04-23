@@ -40,7 +40,7 @@ const ServicesBanner = () => {
                 <h1 className="text-[32px] font-['Rajdhani'] text-white xl:text-[44px] 2xl:text-[56px]">
                 Our Services
                 </h1>
-                <p className="text-[#939393] font-['Rajdhani']text-[15px] leading-[17px] xl:leading-6 max-w-[660px] md:text-center lg:text-left xl:text-[16px] 2xl:text-[18px]">
+                <p className="text-[#939393] font-['Rajdhani']text-[15px] leading-[17px] xl:leading-6 max-w-[660px]  text-justify xl:text-[16px] 2xl:text-[18px] ">
                 At Guardcore Security Services, we offer a comprehensive range of professional security solutions tailored to meet the needs of individuals, businesses, and organizations. From static guards, mobile patrols, and event security to high-level protection, surveillance systems, and investigations — our services are designed to deliver safety, deter threats, and respond swiftly to any situation. Backed by a dedicated team and industry expertise, we provide trusted, result-oriented protection that sets the standard for excellence.                </p>
                 {/* <button
                     onClick={() => navigate("/contact")}
