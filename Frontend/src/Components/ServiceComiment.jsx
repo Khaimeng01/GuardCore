@@ -11,7 +11,7 @@ const OurCommitment = () => {
           4.1.1 Our Commitment
         </h2> */}
 
-        <h1 className="text-[32px] lg:text-[38px]  text-[#0A004B]  font-semibold text-center lg:text-left mb-10 font-['Rajdhani']">
+        <h1 className="text-[32px] lg:text-[38px]  text-[#0A004B]  font-semibold text-center  mb-10 font-['Rajdhani']">
         Our Commitment 
         </h1>
 

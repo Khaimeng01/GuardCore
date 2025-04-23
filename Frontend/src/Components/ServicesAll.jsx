@@ -380,7 +380,7 @@ const ServicesAll = () => {
   </div>
   <div className="flex flex-col items-center gap-2">
     <h1 className="text-[22px] text-[#131313] font-['Rajdhani'] font-semibold text-center leading-tight text-uppercase">
-      House Security Management
+    In-House Security Management
     </h1>
     <div className="h-[3px] w-[40px] bg-yellow-400 rounded-sm my-1"></div>
     <p className="text-sm font-['Rajdhani'] text-center text-justify text-[#333] leading-relaxed">
@@ -715,7 +715,7 @@ const ServicesAll = () => {
                 <div className="flex flex-col gap-4 flex-1">
                   <h1 className="text-[32px] text-[#131313] font-['Rajdhani'] font-bold leading-tight text-uppercase">
                     {/* Security Surveys & Risk Analysis */}
-                    House Security Management     
+                    In-House Security Management     
                     </h1>
                   {/* <h2 className="text-[20px] text-[#1c1c1c] font-semibold font-['Rajdhani']">CHAIRMAN</h2> */}
                   <div className="h-[3px] w-[50px] bg-yellow-400 rounded-sm my-1"></div>

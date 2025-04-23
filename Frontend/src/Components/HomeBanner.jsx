@@ -4,6 +4,8 @@ import banner1 from "../assets/banner1.png";
 import banner2 from "../assets/homeBanner/Image_5.png";
 import banner3 from "../assets/homeBanner/Image_3.png";
 import banner4 from "../assets/homeAboutUs/Image_3.png";
+import banner5 from "../assets/homeAboutUs/Image_4.webp";
+
 
 
 import { FaWhatsapp } from "react-icons/fa";
@@ -14,7 +16,7 @@ const HomeBanner = () => {
     const navigate = useNavigate();
 
     const banner = {
-        img: banner4 ,
+        img: banner5 ,
         title: "CHOOSE GUARDCORE",
         subtitle: "STAY HARDCORE",
         description: "Guardcore Security Services is your trusted partner in safeguarding what matters most. We provide professional, results-driven security solutions for individuals, businesses, and communities. Our team is dedicated to delivering reliable protection with unmatched professionalism and commitment.",

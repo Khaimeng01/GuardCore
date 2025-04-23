@@ -5,7 +5,7 @@ const TrainingAndDevelopment = () => {
   return (
     <div className="bg-[#ECECEC] py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-[32px] lg:text-[38px] text-[#0A004B] font-semibold  text-center lg:text-right mb-10 font-['Rajdhani']">
+        <h1 className="text-[32px] lg:text-[38px] text-[#0A004B] font-semibold  text-center  mb-10 font-['Rajdhani']">
           Training & Development
         </h1>
 
@@ -71,6 +71,7 @@ const TrainingAndDevelopment = () => {
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </div>
